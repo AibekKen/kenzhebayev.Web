@@ -310,7 +310,7 @@ html {
       --fontsize3: 1.4em;
    }
 }
-
+/*============*/
 @media (max-width: 592px) {
    :root {
       --fontsize1: 2.5em;
@@ -318,6 +318,8 @@ html {
       --fontsize3: 1.4em;
    }
 }
+/*============*/
+
 @media (max-width: 500px) {
    :root {
       --fontsize1: 2em;
@@ -404,6 +406,13 @@ html {
    border-radius: 10px;
    margin: 0 0 30px 0;
 }
+@media (max-width: 720px) {
+   .offer__order-buttom {
+      width: 250px;
+      height: 60px;
+      line-height: 60px;
+   }
+}
 @media (max-width: 602px) {
    .offer__order-buttom {
       width: 200px;
@@ -411,13 +420,7 @@ html {
       line-height: 50px;
    }
 }
-@media (max-width: 602px) {
-   .offer__order-buttom {
-      width: 140px;
-      height: 40px;
-      line-height: 40px;
-   }
-}
+
 .offer__more-buttom {
    width: 201.92px;
    height: 52px;
@@ -433,6 +436,14 @@ html {
       width: 140px;
       height: 40px;
       line-height: 40px;
+   }
+}
+
+@media (max-width: 720px) {
+   .offer__more-buttom {
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
    }
 }
 
