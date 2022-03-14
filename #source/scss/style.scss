@@ -91,6 +91,13 @@ $minwidth: 320px;
       --fontsize3: 1.4em;
    }
 }
+@media (max-width: 592px) {
+   :root {
+      --fontsize1: 2.5em;
+      --fontsize2: 2em;
+      --fontsize3: 1.4em;
+   }
+}
 
 @media (max-width: 500px) {
    :root {
@@ -168,17 +175,25 @@ $minwidth: 320px;
       );
       border-radius: 10px;
       margin: 0 0 30px 0;
+      @media (max-width: 720px) {
+         width: 250px;
+         height: 60px;
+         line-height: 60px;
+      }
+
       @media (max-width: 602px) {
          width: 200px;
          height: 50px;
          line-height: 50px;
       }
-      @media (max-width: 602px) {
-         width: 140px;
+
+      @media (max-width: 500px) {
+         width: 160px;
          height: 40px;
          line-height: 40px;
       }
    }
+
    &__more-buttom {
       width: 201.92px;
       height: 52px;
@@ -190,13 +205,26 @@ $minwidth: 320px;
 
       background: #c4c4c4;
       border-radius: 15px;
+
+      @media (max-width: 720px) {
+         width: 200px;
+         height: 50px;
+         line-height: 50px;
+      }
       @media (max-width: 602px) {
          width: 140px;
          height: 40px;
          line-height: 40px;
       }
+
+      @media (max-width: 500px) {
+         width: 130px;
+         height: 30px;
+         line-height: 30px;
+      }
    }
 }
+
 .buttom {
    -webkit-transition: all 0.3s ease;
    -moz-transition: all 0.3s ease;

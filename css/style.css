@@ -287,9 +287,16 @@ html {
     --fontsize1: 3.5em;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 720px) {
   :root {
     --fontsize1: 3em;
+    --fontsize2: 2em;
+    --fontsize3: 1.4em;
+  }
+}
+@media (max-width: 592px) {
+  :root {
+    --fontsize1: 2.5em;
     --fontsize2: 2em;
     --fontsize3: 1.4em;
   }
@@ -374,6 +381,13 @@ html {
   border-radius: 10px;
   margin: 0 0 30px 0;
 }
+@media (max-width: 720px) {
+  .offer__order-buttom {
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
 @media (max-width: 602px) {
   .offer__order-buttom {
     width: 200px;
@@ -381,9 +395,9 @@ html {
     line-height: 50px;
   }
 }
-@media (max-width: 602px) {
+@media (max-width: 500px) {
   .offer__order-buttom {
-    width: 140px;
+    width: 160px;
     height: 40px;
     line-height: 40px;
   }
@@ -398,11 +412,25 @@ html {
   background: #c4c4c4;
   border-radius: 15px;
 }
+@media (max-width: 720px) {
+  .offer__more-buttom {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
 @media (max-width: 602px) {
   .offer__more-buttom {
     width: 140px;
     height: 40px;
     line-height: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .offer__more-buttom {
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
   }
 }
 
