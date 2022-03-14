@@ -11,7 +11,7 @@ html {
       align-items: center;
       @include flexbox;
 
-      @media (max-width: 800px) {
+      @media (max-width: 900px) {
          justify-content: space-between;
       }
    }
@@ -19,8 +19,9 @@ html {
    &__logo {
       position: absolute;
       width: 196px;
-      @media (max-width: 800px) {
+      @media (max-width: 900px) {
          position: static;
+         width: 150px;
       }
    }
 
