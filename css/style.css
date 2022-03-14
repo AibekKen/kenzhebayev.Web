@@ -308,6 +308,13 @@ html {
     --fontsize3: 1.2em;
   }
 }
+@media (max-width: 460px) {
+  :root {
+    --fontsize1: 1.86em;
+    --fontsize2: 1.5em;
+    --fontsize3: 1.14em;
+  }
+}
 .main-screen {
   height: 100vh;
 }
@@ -333,15 +340,17 @@ html {
     margin: 30px 30px 0 0;
   }
 }
+@media (max-width: 630px) {
+  .main-screen__offer {
+    margin: 20px 20px 0 0;
+  }
+}
 .main-screen__image {
   margin: -40px 0 0 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc((575 / 1200) * 100%);
           flex: 0 0 calc((575 / 1200) * 100%);
   padding: 0 0 65.85% 0;
-  -webkit-box-shadow: -5px -5px 25px #563cf8;
-          box-shadow: -5px -5px 25px #563cf8;
-  border-radius: 25px 25px 0px 0px;
 }
 @media (max-width: 602px) {
   .main-screen__image {
