@@ -274,6 +274,9 @@ $minwidth: 320px;
 }
 .buttom:hover {
    transform: scale(1.2);
+   @media (max-width: 460px) {
+      transform: scale(1.05);
+   }
 }
 .ibg {
 }

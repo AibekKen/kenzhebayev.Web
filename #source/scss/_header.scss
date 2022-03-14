@@ -91,22 +91,25 @@ html {
    .lock {
       overflow: hidden;
    }
-
    .header__menu {
-      position: absolute;
-      flex-direction: column;
+      position: fixed;
       width: 100%;
-      height: 100vh;
-      background-color: aqua;
-      top: 0;
-      right: -100vw;
+      height: 110vh;
+      flex-direction: column;
+      top: -110vh;
+      padding: 50px 20px;
+      right: 0;
       z-index: 3;
       transition: all 0.5s ease;
       overflow-y: auto;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(90deg, #bab0f3 75%, #7e6af5);
+      background: -moz-linear-gradient(90deg, #bab0f3 75%, #7e6af5);
+      background: linear-gradient(90deg, #bab0f3 75%, #7e6af5);
    }
 
    .header__menu.active {
-      right: 0;
+      top: 0;
    }
 
    .menu__list {
@@ -114,8 +117,10 @@ html {
    }
 
    .menu__list li a {
+      font-size: 26px;
    }
    .menu__list li {
+      margin-bottom: 15px;
    }
 
    .header__burger {
