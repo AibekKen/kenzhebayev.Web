@@ -65,6 +65,7 @@ $minwidth: 320px;
 
 :root {
    --fontsize1: 5.14em;
+   --fontsizeTitle: 4em;
    --fontsize2: 2.6em;
    --fontsize3: 2em;
    --fontsize4: 1.3em;
@@ -130,7 +131,7 @@ $minwidth: 320px;
 
 .main-screen {
    height: 100vh;
-
+   margin-bottom: 160px;
    &__container {
    }
 
@@ -279,4 +280,75 @@ $minwidth: 320px;
    }
 }
 .ibg {
+}
+//===========================about-product
+
+.section-title {
+   font-size: var(--fontsizeTitle);
+   text-align: center;
+   margin: 0 0 30px 0;
+}
+.section-subtitle {
+   font-size: var(--fontsize3);
+   margin: 0 0 30px 0;
+}
+.text {
+   font-size: var(--fontsize4);
+   line-height: 1.1;
+}
+
+.about-product {
+   &__body {
+      margin: 0 0 160px 0;
+   }
+
+   &__title {
+   }
+
+   &__item {
+   }
+}
+
+.item {
+   max-width: 300px;
+
+   &__title {
+      text-align: center;
+   }
+
+   &__icon {
+      margin: 0 auto 50px;
+      &_1 {
+         width: 230px;
+         height: 230px;
+      }
+   }
+
+   &__label {
+      padding: 32px 20px 20px;
+      width: 300px;
+      height: 250px;
+   }
+}
+
+.label {
+   position: relative;
+   &__text p {
+      margin: 0 0 15px 0;
+   }
+   &__text p:last-child {
+      margin: 0 0 0 0;
+   }
+}
+
+.label::before {
+   content: "";
+   position: absolute;
+   top: -25px;
+   left: 50%;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: rgba(122, 248, 215, 0.25);
+   transform: translate(-50%);
 }
