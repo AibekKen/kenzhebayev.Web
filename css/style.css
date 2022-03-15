@@ -619,8 +619,8 @@ html {
 }
 .item__icon {
   margin: 0 auto 50px;
-  -webkit-filter: drop-shadow(0px 0px 5px #000000);
-          filter: drop-shadow(0px 0px 5px #000000);
+  -webkit-filter: drop-shadow(0px 0px 5px #00000093);
+          filter: drop-shadow(0px 0px 5px #00000093);
 }
 .item__icon_1 {
   width: 230px;
