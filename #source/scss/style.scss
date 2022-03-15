@@ -65,10 +65,11 @@ $minwidth: 320px;
 
 :root {
    --fontsize1: 5.14em;
-   --fontsizeTitle: 4em;
    --fontsize2: 2.6em;
    --fontsize3: 2em;
    --fontsize4: 1.3em;
+   --fontsizeTitle: 4em;
+   --fontsizeSubTitle: 2em;
 }
 
 @media (max-width: 1100px) {
@@ -80,6 +81,8 @@ $minwidth: 320px;
 @media (max-width: 890px) {
    :root {
       --fontsize1: 4em;
+      --fontsizeTitle: 3em;
+      --fontsizeSubTitle: 2em;
    }
 }
 
@@ -94,6 +97,8 @@ $minwidth: 320px;
       --fontsize1: 3em;
       --fontsize2: 2em;
       --fontsize3: 1.4em;
+      --fontsizeTitle: 2.7em;
+      --fontsizeSubTitle: 1.7em;
    }
 }
 @media (max-width: 592px) {
@@ -101,6 +106,8 @@ $minwidth: 320px;
       --fontsize1: 2.5em;
       --fontsize2: 2em;
       --fontsize3: 1.4em;
+      --fontsizeTitle: 2.1em;
+      --fontsizeSubTitle: 1.4em;
    }
 }
 
@@ -124,20 +131,22 @@ $minwidth: 320px;
    :root {
       --fontsize1: 1.5em;
       --fontsize2: 1.3em;
+      --fontsizeTitle: 1.4em;
+      --fontsizeSubTitle: 1.2em;
    }
 }
 
 //===================Main-screen
 
 .main-screen {
-   height: 100vh;
-   margin-bottom: 160px;
-   &__container {
+   @media (orientation: landscape) and (max-width: 1600px) {
+      height: 100vh;
    }
 
    &__title {
       max-width: 872px;
       font-size: var(--fontsize1);
+      font-weight: 700;
       line-height: 1.1;
    }
 
@@ -287,10 +296,12 @@ $minwidth: 320px;
    font-size: var(--fontsizeTitle);
    text-align: center;
    margin: 0 0 30px 0;
+   font-weight: 700;
 }
 .section-subtitle {
-   font-size: var(--fontsize3);
+   font-size: var(--fontsizeSubTitle);
    margin: 0 0 30px 0;
+   font-weight: 700;
 }
 .text {
    font-size: var(--fontsize4);
@@ -298,14 +309,36 @@ $minwidth: 320px;
 }
 
 .about-product {
+   padding: 160px 0;
+   @media (max-width: 880px) {
+      padding: 100px 0;
+   }
+   background: linear-gradient(
+      180deg,
+      rgba(126, 106, 245, 0) -0.01%,
+      #5136f9 10.41%,
+      #5136f9 43.76%,
+      #5136f9 77.6%,
+      rgba(81, 54, 249, 0) 94.78%
+   );
+
    &__body {
+      @include flexbox();
+      justify-content: space-between;
       margin: 0 0 160px 0;
+      @media (max-width: 880px) {
+         flex-direction: column;
+         align-items: center;
+      }
    }
 
    &__title {
    }
 
    &__item {
+      @media (max-width: 880px) {
+         margin: 0 0 60px 0;
+      }
    }
 }
 
@@ -318,8 +351,17 @@ $minwidth: 320px;
 
    &__icon {
       margin: 0 auto 50px;
+      filter: drop-shadow(0px 0px 5px #000000);
       &_1 {
          width: 230px;
+         height: 230px;
+      }
+      &_2 {
+         width: 300px;
+         height: 230px;
+      }
+      &_3 {
+         width: 156px;
          height: 230px;
       }
    }
@@ -328,6 +370,7 @@ $minwidth: 320px;
       padding: 32px 20px 20px;
       width: 300px;
       height: 250px;
+      filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
    }
 }
 
