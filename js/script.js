@@ -11,9 +11,11 @@ function ibg() {
 
 ibg();
 
+
+
+/* код для запуска анимации при появлении блока в зоне видимости. Хорошо для десктопа но трудно для мобильных
 const aboutProductBody = document.querySelector('.about-product__body');
 const labels = document.querySelectorAll('.label');
-
 function show_onscroll() {
    let wt = window.scrollY;
    let wh = document.body.clientHeight;
@@ -29,7 +31,7 @@ window.addEventListener('scroll', function (e) {
       labels.forEach((label) => label.classList.add("active"));
    }
 });
-
+*/
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__menu');
 const menuLink = document.querySelectorAll('.menu__link');
