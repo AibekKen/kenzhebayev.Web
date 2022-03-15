@@ -632,7 +632,12 @@ html {
 }
 @media (max-width: 1200px) {
   .about-product {
-    padding: 160px 0 160px;
+    padding: 150px 0 150px;
+  }
+}
+@media (max-width: 1024px) {
+  .about-product {
+    padding: 140px 0 140px;
   }
 }
 @media (max-width: 880px) {

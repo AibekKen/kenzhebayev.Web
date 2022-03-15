@@ -351,7 +351,10 @@ $minwidth: 320px;
    padding: 200px 0 160px;
    color: #ffff;
    @media (max-width: 1200px) {
-      padding: 160px 0 160px;
+      padding: 150px 0 150px;
+   }
+   @media (max-width: 1024px) {
+      padding: 140px 0 140px;
    }
    @media (max-width: 880px) {
       padding: 100px 0;
