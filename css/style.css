@@ -390,6 +390,8 @@ html {
   font-size: var(--fontsize1);
   font-weight: 700;
   line-height: 1.1;
+  -webkit-animation: moveleft 1s;
+          animation: moveleft 1s;
 }
 .main-screen__body {
   overflow: visible;
@@ -419,6 +421,8 @@ html {
       -ms-flex: 0 0 calc((575 / 1200) * 100%);
           flex: 0 0 calc((575 / 1200) * 100%);
   padding: 0 0 65.85% 0;
+  -webkit-animation: moverigth 1s;
+          animation: moverigth 1s;
 }
 @media (max-width: 602px) {
   .main-screen__image {
@@ -450,6 +454,8 @@ html {
   max-width: 391px;
   text-align: left;
   margin: 0 0 26px 0;
+  -webkit-animation: moveleft 1s 0.2s;
+          animation: moveleft 1s 0.2s;
 }
 @media (max-width: 460px) {
   .offer__text {
@@ -464,6 +470,8 @@ html {
   line-height: 72px;
   text-align: center;
   color: #ffff;
+  -webkit-animation: moveleft 1s 0.4s;
+          animation: moveleft 1s 0.4s;
   background: linear-gradient(274.13deg, #2f35c4 7.07%, rgba(47, 53, 196, 0.520833) 32.24%, rgba(47, 53, 196, 0.98) 85.26%, rgba(47, 53, 196, 0) 109.89%);
   border-radius: 10px;
   margin: 0 0 30px 0;
@@ -510,6 +518,8 @@ html {
   color: #483b3b;
   background: #c4c4c4;
   border-radius: 15px;
+  -webkit-animation: moveleft 1s 0.6s;
+          animation: moveleft 1s 0.6s;
 }
 @media (max-width: 720px) {
   .offer__more-buttom {
@@ -556,6 +566,47 @@ html {
   }
 }
 
+@-webkit-keyframes moverigth {
+  0% {
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moverigth {
+  0% {
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@-webkit-keyframes moveleft {
+  0% {
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes moveleft {
+  0% {
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
 .section-title {
   font-size: var(--fontsizeTitle);
   text-align: center;
