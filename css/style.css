@@ -630,6 +630,11 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-0.01%, rgba(126, 106, 245, 0)), color-stop(10.41%, #5136f9), color-stop(43.76%, #5136f9), color-stop(77.6%, #5136f9), color-stop(94.78%, rgba(81, 54, 249, 0)));
   background: linear-gradient(180deg, rgba(126, 106, 245, 0) -0.01%, #5136f9 10.41%, #5136f9 43.76%, #5136f9 77.6%, rgba(81, 54, 249, 0) 94.78%);
 }
+@media (max-width: 1200px) {
+  .about-product {
+    padding: 160px 0 160px;
+  }
+}
 @media (max-width: 880px) {
   .about-product {
     padding: 100px 0;
