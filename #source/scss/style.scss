@@ -562,6 +562,8 @@ $minwidth: 320px;
    }
 
    &__description {
-      font-size: 1em;
+      @media (max-width: 375px) {
+         font-size: 1em;
+      }
    }
 }

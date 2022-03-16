@@ -880,6 +880,8 @@ html {
     font-size: 1.1em;
   }
 }
-.items__description {
-  font-size: 1em;
+@media (max-width: 375px) {
+  .items__description {
+    font-size: 1em;
+  }
 }
