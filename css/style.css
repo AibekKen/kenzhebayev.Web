@@ -738,7 +738,7 @@ html {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .best-sides__body {
     height: 400px;
   }
@@ -750,7 +750,7 @@ html {
   padding: 0 0 51.8% 0;
   z-index: -1;
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .best-sides__bg-image {
     position: absolute;
     top: 5%;
@@ -782,7 +782,7 @@ html {
     margin: 0 0 0 -300px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .best-sides__items {
     margin: 0 0 0 0;
   }
