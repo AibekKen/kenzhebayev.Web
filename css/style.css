@@ -777,7 +777,7 @@ html {
     margin: 0 0 0 -300px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 710px) {
   .best-sides__items {
     margin: 0 0 0 -300px;
   }
@@ -810,7 +810,7 @@ html {
     padding: 11px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 710px) {
   .items__point {
     padding: 7px;
   }
@@ -828,7 +828,7 @@ html {
     height: 112px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 710px) {
   .items__point {
     background: rgba(122, 248, 215, 0.884);
     height: 100px;
@@ -844,7 +844,7 @@ html {
     height: 90px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 710px) {
   .items__icon {
     width: 86px;
     height: 86px;

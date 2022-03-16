@@ -463,8 +463,6 @@ $minwidth: 320px;
       @include flex(0 0 51.85%);
       padding: 0 0 51.8% 0;
       z-index: -1;
-      @media (max-width: 670px) {
-      }
       @media (max-width: 550px) {
          position: absolute;
          top: 5%;
@@ -482,7 +480,7 @@ $minwidth: 320px;
       @media (max-width: 830px) {
          margin: 0 0 0 -300px;
       }
-      @media (max-width: 670px) {
+      @media (max-width: 710px) {
          margin: 0 0 0 -300px;
       }
       @media (max-width: 550px) {
@@ -503,7 +501,7 @@ $minwidth: 320px;
       @media (max-width: 830px) {
          padding: 11px;
       }
-      @media (max-width: 670px) {
+      @media (max-width: 710px) {
          padding: 7px;
       }
 
@@ -518,7 +516,7 @@ $minwidth: 320px;
       @media (max-width: 830px) {
          height: 112px;
       }
-      @media (max-width: 670px) {
+      @media (max-width: 710px) {
          background: rgba(122, 248, 215, 0.884);
 
          height: 100px;
@@ -535,7 +533,7 @@ $minwidth: 320px;
          width: 90px;
          height: 90px;
       }
-      @media (max-width: 670px) {
+      @media (max-width: 710px) {
          width: 86px;
          height: 86px;
       }
