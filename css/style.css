@@ -750,6 +750,11 @@ html {
   padding: 0 0 51.8% 0;
   z-index: -1;
 }
+@media (max-width: 830px) {
+  .best-sides__bg-image {
+    opacity: 0.5;
+  }
+}
 @media (max-width: 650px) {
   .best-sides__bg-image {
     position: absolute;
@@ -794,7 +799,7 @@ html {
 }
 
 .items__point {
-  background: rgba(122, 248, 215, 0.5);
+  background: #7bb4ff65;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -825,12 +830,13 @@ html {
 }
 @media (max-width: 830px) {
   .items__point {
+    background: #7bb4ff9a;
     height: 112px;
   }
 }
 @media (max-width: 710px) {
   .items__point {
-    background: rgba(122, 248, 215, 0.884);
+    background: #7bb0ffd7;
     height: 100px;
   }
 }

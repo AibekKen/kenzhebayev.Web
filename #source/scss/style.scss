@@ -463,6 +463,9 @@ $minwidth: 320px;
       @include flex(0 0 51.85%);
       padding: 0 0 51.8% 0;
       z-index: -1;
+      @media (max-width: 830px) {
+         opacity: 0.5;
+      }
       @media (max-width: 650px) {
          position: absolute;
          top: 5%;
@@ -493,7 +496,7 @@ $minwidth: 320px;
 }
 .items {
    &__point {
-      background: rgba(122, 248, 215, 0.5);
+      background: #7bb4ff65;
       box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
       border-radius: 50px;
 
@@ -514,11 +517,11 @@ $minwidth: 320px;
       max-width: 662px;
       height: 130px;
       @media (max-width: 830px) {
+         background: #7bb4ff9a;
          height: 112px;
       }
       @media (max-width: 710px) {
-         background: rgba(122, 248, 215, 0.884);
-
+         background: #7bb0ffd7;
          height: 100px;
       }
       @media (max-width: 510px) {
