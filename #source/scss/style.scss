@@ -447,6 +447,7 @@ $minwidth: 320px;
 //===========
 
 .best-sides {
+   margin: 0 0 50px 0;
    &__title {
    }
 
@@ -478,7 +479,7 @@ $minwidth: 320px;
       flex-direction: column;
       justify-content: space-between;
       margin: 0 0 0 -200px;
-      @media (max-width: 768px) {
+      @media (max-width: 830px) {
          margin: 0 0 0 -300px;
       }
       @media (max-width: 670px) {
@@ -499,7 +500,7 @@ $minwidth: 320px;
       border-radius: 50px;
 
       padding: 16px;
-      @media (max-width: 768px) {
+      @media (max-width: 830px) {
          padding: 11px;
       }
       @media (max-width: 670px) {
@@ -514,7 +515,7 @@ $minwidth: 320px;
       @include flexbox();
       max-width: 662px;
       height: 130px;
-      @media (max-width: 768px) {
+      @media (max-width: 830px) {
          height: 112px;
       }
       @media (max-width: 670px) {
@@ -530,7 +531,7 @@ $minwidth: 320px;
    &__icon {
       width: 98px;
       height: 98px;
-      @media (max-width: 768px) {
+      @media (max-width: 830px) {
          width: 90px;
          height: 90px;
       }

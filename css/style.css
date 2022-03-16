@@ -729,6 +729,9 @@ html {
           transform: translate(-50%);
 }
 
+.best-sides {
+  margin: 0 0 50px 0;
+}
 .best-sides__body {
   position: relative;
   display: -webkit-box;
@@ -769,7 +772,7 @@ html {
           justify-content: space-between;
   margin: 0 0 0 -200px;
 }
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .best-sides__items {
     margin: 0 0 0 -300px;
   }
@@ -802,7 +805,7 @@ html {
   max-width: 662px;
   height: 130px;
 }
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .items__point {
     padding: 11px;
   }
@@ -820,7 +823,7 @@ html {
             align-items: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .items__point {
     height: 112px;
   }
@@ -835,7 +838,7 @@ html {
   width: 98px;
   height: 98px;
 }
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .items__icon {
     width: 90px;
     height: 90px;
