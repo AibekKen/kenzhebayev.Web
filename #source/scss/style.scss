@@ -671,11 +671,11 @@ $minwidth: 320px;
    }
 
    &__plus-list li::before {
-      content: url(./img/icons/plus.svg);
+      content: url(../img/icons/plus.svg);
    }
 
    &__minus-list li::before {
-      content: url(./img/icons/minus.svg);
+      content: url(../img/icons/minus.svg);
    }
 
    &__recomend {
