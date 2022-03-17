@@ -976,10 +976,10 @@ html {
   margin: 0 0 0 0;
 }
 .table__plus-list li::before {
-  background: url("../img/icons/plus.svg") center center/contain no-repeat;
+  content: url(../img/icons/plus.svg);
 }
 .table__minus-list li::before {
-  background: url("../img/icons/minus.svg") center center/contain no-repeat;
+  content: url(../img/icons/minus.svg);
 }
 .table__recomend {
   padding: 30px 0 0 0;

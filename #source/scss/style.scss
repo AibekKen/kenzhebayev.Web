@@ -672,11 +672,11 @@ $minwidth: 320px;
    }
 
    &__plus-list li::before {
-      background: url('../img/icons/plus.svg') center center / contain no-repeat;
+      content: url(../img/icons/plus.svg);
    }
 
    &__minus-list li::before {
-      background: url('../img/icons/minus.svg') center center / contain no-repeat;
+      content: url(../img/icons/minus.svg);
    }
 
    &__recomend {
