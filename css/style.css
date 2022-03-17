@@ -391,8 +391,8 @@ html {
   font-size: var(--fontsize1);
   font-weight: 700;
   line-height: 1.1;
-  -webkit-transition: margin 1s ease;
-  transition: margin 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .main-screen__title.active {
   margin: 0 0 0 0;
@@ -449,8 +449,8 @@ html {
 }
 
 .buttom {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .buttom:hover {
@@ -554,8 +554,8 @@ html {
   background: #c4c4c4;
   border-radius: 15px;
   margin-right: 50px;
-  -webkit-transition: margin 0.4s ease;
-  transition: margin 0.4s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 @media (max-width: 720px) {
   .offer__more-buttom {
