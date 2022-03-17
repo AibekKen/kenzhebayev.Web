@@ -964,7 +964,7 @@ html {
 .table__list li::before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: 0px;
   left: 0;
   width: 24px;
   height: 24px;
