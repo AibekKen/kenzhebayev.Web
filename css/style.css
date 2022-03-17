@@ -386,12 +386,16 @@ html {
   }
 }
 .main-screen__title {
+  margin: 0 0 0 -50px;
   max-width: 872px;
   font-size: var(--fontsize1);
   font-weight: 700;
   line-height: 1.1;
-  -webkit-animation: moveleft 1s;
-          animation: moveleft 1s;
+  -webkit-transition: margin 1s ease;
+  transition: margin 1s ease;
+}
+.main-screen__title.active {
+  margin: 0 0 0 0;
 }
 .main-screen__body {
   overflow: visible;
@@ -416,22 +420,47 @@ html {
   }
 }
 .main-screen__image {
-  margin: -40px 0 0 0;
+  margin: 0 0 0 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc((575 / 1200) * 100%);
           flex: 0 0 calc((575 / 1200) * 100%);
   padding: 0 0 65.85% 0;
-  -webkit-animation: moverigth 1s;
-          animation: moverigth 1s;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.main-screen__image.active {
+  margin: -40px 0 0 0;
 }
 @media (max-width: 602px) {
   .main-screen__image {
+    margin: 0 0 0 0;
+  }
+  .main-screen__image.active {
     margin: -20px 0 0 0;
   }
 }
 @media (max-width: 370px) {
   .main-screen__image {
+    margin: 0 -20px 0 0;
+  }
+  .main-screen__image.active {
     margin: -20px -20px 0 0;
+  }
+}
+
+.buttom {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.buttom:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+@media (max-width: 460px) {
+  .buttom:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
@@ -453,14 +482,17 @@ html {
   line-height: 1.1;
   max-width: 391px;
   text-align: left;
-  margin: 0 0 26px 0;
-  -webkit-animation: moveleft 1s 0.2s;
-          animation: moveleft 1s 0.2s;
+  margin: 0 50px 26px 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 @media (max-width: 460px) {
   .offer__text {
     margin: 0 0 15px 0;
   }
+}
+.offer__text.active {
+  margin: 0 0 26px 0;
 }
 .offer__order-buttom {
   width: 264px;
@@ -470,11 +502,11 @@ html {
   line-height: 72px;
   text-align: center;
   color: #ffff;
-  -webkit-animation: moveleft 1s 0.4s;
-          animation: moveleft 1s 0.4s;
   background: linear-gradient(274.13deg, #2f35c4 7.07%, rgba(47, 53, 196, 0.520833) 32.24%, rgba(47, 53, 196, 0.98) 85.26%, rgba(47, 53, 196, 0) 109.89%);
   border-radius: 10px;
-  margin: 0 0 30px 0;
+  margin: 0 50px 30px 0;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 @media (max-width: 460px) {
   .offer__order-buttom {
@@ -509,6 +541,9 @@ html {
     line-height: 40px;
   }
 }
+.offer__order-buttom.active {
+  margin: 0 0 30px 0;
+}
 .offer__more-buttom {
   width: 201.92px;
   height: 52px;
@@ -518,8 +553,9 @@ html {
   color: #483b3b;
   background: #c4c4c4;
   border-radius: 15px;
-  -webkit-animation: moveleft 1s 0.6s;
-          animation: moveleft 1s 0.6s;
+  margin-right: 50px;
+  -webkit-transition: margin 0.4s ease;
+  transition: margin 0.4s ease;
 }
 @media (max-width: 720px) {
   .offer__more-buttom {
@@ -549,63 +585,10 @@ html {
     line-height: 30px;
   }
 }
-
-.buttom {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.offer .offer__more-buttom.active {
+  margin-right: 0px;
 }
 
-.buttom:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-@media (max-width: 460px) {
-  .buttom:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-}
-
-@keyframes moverigth {
-  0% {
-    -webkit-transform: translate(50px);
-            transform: translate(50px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-@-webkit-keyframes moverigth {
-  0% {
-    -webkit-transform: translate(50px);
-            transform: translate(50px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-@keyframes moveleft {
-  0% {
-    -webkit-transform: translate(-50px);
-            transform: translate(-50px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-@-webkit-keyframes moveleft {
-  0% {
-    -webkit-transform: translate(-50px);
-            transform: translate(-50px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
 .section-title {
   font-size: var(--fontsizeTitle);
   text-align: center;

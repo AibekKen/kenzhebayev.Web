@@ -11,6 +11,23 @@ function ibg() {
 
 ibg();
 
+//=============== Анимация при загрузки страницы на главной
+const mainTitle = document.querySelector('.main-screen__title');
+const offerText = document.querySelector('.offer__text');
+const orderBtn = document.querySelector('.offer__order-buttom');
+const moreBtn = document.querySelector('.offer__more-buttom');
+const mainImage = document.querySelector('.main-screen__image');
+
+document.addEventListener("DOMContentLoaded", () => {
+   mainTitle.classList.add('active');
+   mainImage.classList.add('active');
+   offerText.classList.add('active');
+   orderBtn.classList.add('active');
+   moreBtn.classList.add('active');
+
+})
+
+
 
 
 /* код для запуска анимации при появлении блока в зоне видимости. Хорошо для десктопа но трудно для мобильных

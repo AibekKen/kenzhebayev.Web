@@ -145,11 +145,16 @@ $minwidth: 320px;
    }
 
    &__title {
+      margin: 0 0 0 -50px;
       max-width: 872px;
       font-size: var(--fontsize1);
       font-weight: 700;
       line-height: 1.1;
-      animation: moveleft 1s;
+      transition: margin 1s ease;
+   }
+
+   &__title.active {
+      margin: 0 0 0 0;
    }
 
    &__body {
@@ -170,18 +175,42 @@ $minwidth: 320px;
    }
 
    &__image {
-      margin: -40px 0 0 0;
+      margin: 0 0 0 0;
       flex: 0 0 calc((575 / 1200) * 100%);
       padding: 0 0 65.85% 0;
-      animation: moverigth 1s;
+      transition: all 1s ease;
+      &.active {
+         margin: -40px 0 0 0;
+      }
       @media (max-width: 602px) {
-         margin: -20px 0 0 0;
+         margin: 0 0 0 0;
+         &.active {
+            margin: -20px 0 0 0;
+         }
       }
       @media (max-width: 370px) {
-         margin: -20px -20px 0 0;
+         margin: 0 -20px 0 0;
+         &.active {
+            margin: -20px -20px 0 0;
+         }
       }
    }
 }
+
+.buttom {
+   -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+}
+
+.buttom:hover {
+   transform: scale(1.2);
+   @media (max-width: 460px) {
+      transform: scale(1.05);
+   }
+}
+
 .offer {
    @include flexbox();
    flex-direction: column;
@@ -192,11 +221,16 @@ $minwidth: 320px;
       line-height: 1.1;
       max-width: 391px;
       text-align: left;
-      margin: 0 0 26px 0;
-      animation: moveleft 1s 0.2s;
+      margin: 0 50px 26px 0;
+      transition: all 0.8s ease;
+
       @media (max-width: 460px) {
          margin: 0 0 15px 0;
       }
+   }
+
+   &__text.active {
+      margin: 0 0 26px 0;
    }
 
    &__order-buttom {
@@ -207,7 +241,6 @@ $minwidth: 320px;
       line-height: 72px;
       text-align: center;
       color: #ffff;
-      animation: moveleft 1s 0.4s;
       background: linear-gradient(
          274.13deg,
          #2f35c4 7.07%,
@@ -216,10 +249,12 @@ $minwidth: 320px;
          rgba(47, 53, 196, 0) 109.89%
       );
       border-radius: 10px;
-      margin: 0 0 30px 0;
+      margin: 0 50px 30px 0;
+      transition: all 0.6s ease;
       @media (max-width: 460px) {
          margin: 0 0 20px 0;
       }
+
       @media (max-width: 720px) {
          width: 250px;
          height: 60px;
@@ -245,24 +280,28 @@ $minwidth: 320px;
       }
    }
 
+   &__order-buttom.active {
+      margin: 0 0 30px 0;
+   }
+
    &__more-buttom {
       width: 201.92px;
       height: 52px;
       font-size: var(--fontsize3);
       line-height: 52px;
       text-align: center;
-
       color: #483b3b;
-
       background: #c4c4c4;
       border-radius: 15px;
-      animation: moveleft 1s 0.6s;
+      margin-right: 50px;
+      transition: margin 0.4s ease;
 
       @media (max-width: 720px) {
          width: 200px;
          height: 50px;
          line-height: 50px;
       }
+
       @media (max-width: 602px) {
          width: 140px;
          height: 40px;
@@ -281,54 +320,11 @@ $minwidth: 320px;
          line-height: 30px;
       }
    }
-}
-
-.buttom {
-   -webkit-transition: all 0.3s ease;
-   -moz-transition: all 0.3s ease;
-   -o-transition: all 0.3s ease;
-   transition: all 0.3s ease;
-}
-.buttom:hover {
-   transform: scale(1.2);
-   @media (max-width: 460px) {
-      transform: scale(1.05);
-   }
-}
-@keyframes moverigth {
-   0% {
-      transform: (translate(50px));
-   }
-   100% {
-      transform: (translate(0));
-   }
-}
-@-webkit-keyframes moverigth {
-   0% {
-      transform: (translate(50px));
-   }
-   100% {
-      transform: (translate(0));
+   .offer__more-buttom.active {
+      margin-right: 0px;
    }
 }
 
-@keyframes moveleft {
-   0% {
-      transform: (translate(-50px));
-   }
-   100% {
-      transform: (translate(0));
-   }
-}
-
-@-webkit-keyframes moveleft {
-   0% {
-      transform: (translate(-50px));
-   }
-   100% {
-      transform: (translate(0));
-   }
-}
 //===========================about-product
 
 .section-title {
