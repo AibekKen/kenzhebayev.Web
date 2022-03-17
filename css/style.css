@@ -83,8 +83,8 @@ html {
 }
 @media (max-width: 460px) {
   .header {
-    margin: 0 0 30px 0;
-    padding: 30px 0 0 0;
+    margin: 0 0 40px 0;
+    padding: 35px 0 0 0;
   }
 }
 .header__row {
@@ -367,6 +367,7 @@ html {
 @media (max-width: 460px) {
   :root {
     --fontsize1: 1.86em;
+    --fontsizeTitle: 1.7em;
     --fontsize2: 1.5em;
     --fontsize3: 1.14em;
   }
@@ -376,7 +377,6 @@ html {
     --fontsize1: 1.7em;
     --fontsize2: 1.4em;
     --fontsizeTitle: 1.6em;
-    --fontsizeSubTitle: 1.45em;
     --fontsize4: 1.3em;
   }
 }
@@ -416,7 +416,7 @@ html {
 }
 @media (max-width: 460px) {
   .main-screen__offer {
-    margin: 10px 5px 0 0;
+    margin: 20px 5px 0 0;
   }
 }
 .main-screen__image {
@@ -625,7 +625,7 @@ html {
 }
 @media (max-width: 880px) {
   .about-product {
-    padding: 100px 0 50px;
+    padding: 130px 0 50px;
   }
 }
 .about-product__body {

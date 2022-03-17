@@ -122,6 +122,7 @@ $minwidth: 320px;
 @media (max-width: 460px) {
    :root {
       --fontsize1: 1.86em;
+      --fontsizeTitle: 1.7em;
       --fontsize2: 1.5em;
       --fontsize3: 1.14em;
    }
@@ -132,12 +133,11 @@ $minwidth: 320px;
       --fontsize1: 1.7em;
       --fontsize2: 1.4em;
       --fontsizeTitle: 1.6em;
-      --fontsizeSubTitle: 1.45em;
       --fontsize4: 1.3em;
    }
 }
 
-//===================Main-screen
+//===================================================================Main-screen
 
 .main-screen {
    @media (orientation: landscape) and (max-width: 1600px) {
@@ -173,7 +173,7 @@ $minwidth: 320px;
          margin: 30px 30px 0 0;
       }
       @media (max-width: 460px) {
-         margin: 10px 5px 0 0;
+         margin: 20px 5px 0 0;
       }
    }
 
@@ -337,7 +337,7 @@ $minwidth: 320px;
    }
 }
 
-//===========================about-product
+//=======================================================================about-product
 
 .section-title {
    font-size: var(--fontsizeTitle);
@@ -365,7 +365,7 @@ $minwidth: 320px;
       padding: 140px 0 140px;
    }
    @media (max-width: 880px) {
-      padding: 100px 0 50px;
+      padding: 130px 0 50px;
    }
    background: linear-gradient(
       180deg,
@@ -577,7 +577,7 @@ $minwidth: 320px;
       }
    }
 }
-//================4.compare {
+//================================================================================COMPARE====
 .compare {
    color: #ffff;
    padding: 110px 0px 160px;
