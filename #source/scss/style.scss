@@ -656,6 +656,7 @@ $minwidth: 320px;
       display: flex;
    }
    &__list li::before {
+      content: "";
       position: absolute;
       top: -1px;
       left: 0;
@@ -671,11 +672,11 @@ $minwidth: 320px;
    }
 
    &__plus-list li::before {
-      content: url(../img/icons/plus.svg);
+      background: url(../img/icons/plus.svg) center center / contain no-repeat;
    }
 
    &__minus-list li::before {
-      content: url(../img/icons/minus.svg);
+      background: url(../img/icons/minus.svg) center center / contain no-repeat;
    }
 
    &__recomend {
