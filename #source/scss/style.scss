@@ -453,7 +453,6 @@ $minwidth: 320px;
 }
 
 //===========
-
 .best-sides {
    margin: 0 0 50px 0;
    &__title {
@@ -575,6 +574,124 @@ $minwidth: 320px;
    &__description {
       @media (max-width: 375px) {
          font-size: 1em;
+      }
+   }
+}
+//================4.compare {
+.compare {
+   color: #ffff;
+   padding: 110px 0px 160px;
+   background: linear-gradient(
+      180deg,
+      rgba(81, 54, 249, 0) -0.01%,
+      #5136f9 10.41%,
+      #5136f9 43.76%,
+      #5136f9 77.6%,
+      rgba(81, 54, 249, 0) 94.78%
+   );
+   &__title {
+   }
+
+   &__description {
+      max-width: 839px;
+      text-align: center;
+      margin: 0 auto 50px;
+      @media (max-width: 400px) {
+         font-size: 1em;
+      }
+   }
+
+   &__body {
+      max-width: 839px;
+      @include flexbox();
+      justify-content: space-between;
+      margin: 0 auto;
+      @media (max-width: 768px) {
+         flex-direction: column;
+         align-items: center;
+      }
+      @media (max-width: 400px) {
+         font-size: 1em;
+      }
+   }
+
+   &__table {
+      @media (max-width: 768px) {
+         margin: 0 0 50px 0;
+      }
+      &:last-child {
+         @media (max-width: 768px) {
+            margin: 0 0 0px 0;
+         }
+      }
+   }
+}
+.container {
+}
+
+.table {
+   @include flexbox();
+   flex-direction: column;
+   max-width: 393px;
+   padding: 20px;
+   background: linear-gradient(
+      180deg,
+      rgba(17, 194, 121, 0.25) 0%,
+      rgba(122, 248, 215, 0.25) 48.44%,
+      rgba(17, 194, 121, 0.25) 100%
+   );
+   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+   border-radius: 15px;
+   &__title {
+      text-align: center;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+   }
+   &__list li {
+      align-items: center;
+      height: 24px;
+      position: relative;
+      margin: 0 0 25px 0;
+      padding: 0 0 0 40px;
+      display: flex;
+   }
+   &__list li::before {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+   }
+
+   &__plus-list li:last-child {
+      margin: 0 0 50px 0;
+   }
+   &__minus-list li:last-child {
+      margin: 0 0 0 0;
+   }
+
+   &__plus-list li::before {
+      content: url(/img/icons/plus.svg);
+   }
+
+   &__minus-list li::before {
+      content: url(/img/icons/minus.svg);
+   }
+
+   &__recomend {
+      padding: 30px 0 0 0;
+      text-align: center;
+      margin: auto 0 8px 0;
+   }
+
+   &__icon {
+      height: 40px;
+      margin: 0 auto;
+      &_1 {
+         width: 40px;
+      }
+      &_2 {
+         width: 158px;
       }
    }
 }
