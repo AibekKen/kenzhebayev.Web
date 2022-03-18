@@ -1058,6 +1058,7 @@ html {
 }
 
 .sildesRams {
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1070,6 +1071,7 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
+  color: #000;
 }
 
 .reviews {
