@@ -119,7 +119,7 @@ prev.addEventListener('click', () => plusSlides(-1));
 next.addEventListener('click', () => plusSlides(1));
 
 
-setInterval(plusSlides, 10000, +1)
+//setInterval(plusSlides, 10000, +1)
 
 
 customersLink.forEach((link, i) => {
