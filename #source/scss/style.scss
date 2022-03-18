@@ -734,8 +734,6 @@ $minwidth: 320px;
    }
 }
 //==========================================
-.slide__title {
-}
 
 .slide {
 }
@@ -770,22 +768,21 @@ $minwidth: 320px;
    bottom: -90px;
    left: 50%;
    max-width: 540px;
+
    -ms-transform: translate(-50%);
    transform: translate(-50%);
    text-align: center;
    & P {
       font-weight: 700;
    }
-}
-
-@media (max-width: 768px) {
-   .mySlides {
-      margin: 0 0 10px 0;
+   @media (max-width: 934px) {
+      font-size: 1.1em;
    }
-}
-@media (max-width: 425px) {
-   .mySlides {
-      margin: 0;
+   @media (max-width: 610px) {
+      font-size: 1em;
+   }
+   @media (max-width: 670px) {
+      width: 100%;
    }
 }
 
@@ -793,8 +790,8 @@ $minwidth: 320px;
 .next {
    cursor: pointer;
    position: absolute;
-   width: 25.92px;
-   height: 89.56px;
+   width: 3.5%;
+   padding: 0 0 12.5% 0;
    top: 50%;
    //margin-top: 22px;
    //padding: 16px;
@@ -805,16 +802,63 @@ $minwidth: 320px;
 
 .prev {
    left: -30px;
+   @media (max-width: 800px) {
+      left: -25px;
+   }
+   @media (max-width: 600px) {
+      left: -20px;
+   }
+   @media (max-width: 461px) {
+      left: -10px;
+   }
 }
 .next {
    right: -30px;
+   @media (max-width: 800px) {
+      right: -25px;
+   }
+   @media (max-width: 600px) {
+      right: -20px;
+   }
+   @media (max-width: 461px) {
+      right: -15px;
+   }
+   @media (max-width: 360px) {
+      right: -10px;
+   }
 }
 
 .prev:hover {
    left: -35px;
+   @media (max-width: 800px) {
+      left: -30px;
+   }
+   @media (max-width: 600px) {
+      left: -25px;
+   }
+   @media (max-width: 461px) {
+      left: -18px;
+   }
+
+   @media (max-width: 360px) {
+      left: -15px;
+   }
 }
 .next:hover {
    right: -35px;
+   @media (max-width: 800px) {
+      right: -30px;
+   }
+   @media (max-width: 600px) {
+      right: -25px;
+   }
+   @media (max-width: 461px) {
+      right: -18px;
+   }
+
+   @media (max-width: 360px) {
+      right: -15px;
+   }
 }
 
 * .fade {
@@ -850,6 +894,7 @@ $minwidth: 320px;
    margin: 0 auto 50px;
    @include flexbox();
    justify-content: space-between;
+
    &__link {
       position: relative;
       color: #000;
@@ -867,6 +912,19 @@ $minwidth: 320px;
          width: 100%;
          height: 1px;
       }
+      @media (max-width: 430px) {
+         font-size: 1.1em;
+      }
+
+      @media (max-width: 370px) {
+         display: inline-block;
+         text-align: center;
+      }
+   }
+   @media (max-width: 370px) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
    }
 }
 .text {
