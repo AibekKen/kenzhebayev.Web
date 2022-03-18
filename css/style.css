@@ -1124,11 +1124,6 @@ html {
   right: -35px;
 }
 
-.active,
-.dots:hover {
-  background-color: #717171;
-}
-
 * .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -1154,4 +1149,18 @@ html {
   100% {
     opacity: 1;
   }
+}
+.customers {
+  max-width: 540px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.customers__link {
+  color: #000;
+  display: block;
 }

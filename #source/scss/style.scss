@@ -815,10 +815,6 @@ $minwidth: 320px;
    right: -35px;
 }
 
-.active,
-.dots:hover {
-   background-color: #717171;
-}
 * .fade {
    -webkit-animation-name: fade;
    -webkit-animation-duration: 1.5s;
@@ -845,4 +841,17 @@ $minwidth: 320px;
    100% {
       opacity: 1;
    }
+}
+
+.customers {
+   max-width: 540px;
+   margin: 0 auto;
+   @include flexbox();
+   justify-content: space-between;
+   &__link {
+      color: #000;
+      display: block;
+   }
+}
+.text {
 }
