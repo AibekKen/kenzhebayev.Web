@@ -1118,10 +1118,15 @@ html {
 }
 
 .prev {
-  left: -30px;
+  left: -40px;
   background-position: left;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .prev {
+    left: -35px;
+  }
+}
+@media (max-width: 1000px) {
   .prev {
     left: -25px;
   }
@@ -1138,10 +1143,15 @@ html {
 }
 
 .next {
-  right: -30px;
+  right: -40px;
   background-position: right;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .next {
+    right: -35px;
+  }
+}
+@media (max-width: 1000px) {
   .next {
     right: -25px;
   }
@@ -1163,9 +1173,14 @@ html {
 }
 
 .prev:hover {
-  left: -35px;
+  left: -45px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .prev:hover {
+    left: -38px;
+  }
+}
+@media (max-width: 1000px) {
   .prev:hover {
     left: -30px;
   }
@@ -1187,9 +1202,14 @@ html {
 }
 
 .next:hover {
-  right: -35px;
+  right: -45px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .next:hover {
+    right: -40px;
+  }
+}
+@media (max-width: 1000px) {
   .next:hover {
     right: -30px;
   }
