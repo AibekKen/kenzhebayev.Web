@@ -1050,12 +1050,11 @@ html {
 }
 
 .slideshow-container {
-  width: 1139px;
-  height: 587px;
+  width: 95%;
   position: relative;
   margin: auto;
-  padding: 0px 15px;
-  margin: 0 0 100px 0;
+  padding: 0px 0 48.9% 0;
+  margin: 0 auto 100px;
 }
 
 .sildesRams {
@@ -1068,6 +1067,7 @@ html {
 }
 
 .mySlides {
+  position: absolute;
   width: 100%;
   height: 100%;
 }
