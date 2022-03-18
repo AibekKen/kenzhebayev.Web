@@ -69,6 +69,9 @@ menuLink.forEach((link, index) => link.addEventListener('click', () => {
    block.classList.remove('block');
 }))
 //==================
+const customersLink = document.querySelectorAll('.customers__link');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -84,7 +87,6 @@ function currentSlide(n) {
 function showSlides(n) {
    var i;
    var slides = document.getElementsByClassName("mySlides");
-   // var dots = document.getElementsByClassName("dots"); - точки не нужны
 
    if (n > slides.length) {
       slideIndex = 1;
@@ -105,10 +107,14 @@ function showSlides(n) {
    dots[slideIndex-1].className+= " active";
  */
    slides[slideIndex - 1].style.display = "block";
+   for (let j = 0; j < customersLink.length; j++) {
+      customersLink[j].classList.remove('active')
+   }
+
+   customersLink[slideIndex - 1].classList.add('active');
+
 }
 
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
 prev.addEventListener('click', () => plusSlides(-1));
 next.addEventListener('click', () => plusSlides(1));
 
@@ -116,4 +122,9 @@ next.addEventListener('click', () => plusSlides(1));
 setInterval(plusSlides, 10000, +1)
 
 
-
+customersLink.forEach((link, i) => {
+   link.addEventListener('click', (e) => {
+      e.preventDefault();
+      currentSlide(i + 1);
+   })
+})
