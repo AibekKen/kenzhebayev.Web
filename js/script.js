@@ -69,6 +69,7 @@ menuLink.forEach((link, index) => link.addEventListener('click', () => {
    block.classList.remove('block');
 }))
 //==================
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -106,7 +107,7 @@ function showSlides(n) {
    slides[slideIndex - 1].style.display = "block";
 }
 
-setInterval(plusSlides, 10000, +1)
+//setInterval(plusSlides, 10000, +1)
 
 
 

@@ -746,6 +746,7 @@ $minwidth: 320px;
    position: relative;
    margin: auto;
    padding: 0px 15px;
+   margin: 0 0 100px 0;
 }
 .sildesRams {
    position: absolute;
@@ -759,6 +760,19 @@ $minwidth: 320px;
 .mySlides {
    width: 100%;
    height: 100%;
+}
+
+.reviews {
+   position: absolute;
+   bottom: -90px;
+   left: 50%;
+   max-width: 540px;
+   -ms-transform: translate(-50%);
+   transform: translate(-50%);
+   text-align: center;
+   & P {
+      font-weight: 700;
+   }
 }
 
 @media (max-width: 768px) {
@@ -776,27 +790,28 @@ $minwidth: 320px;
 .next {
    cursor: pointer;
    position: absolute;
+   width: 25.92px;
+   height: 89.56px;
    top: 50%;
-   width: auto;
-   margin-top: 22px;
-   padding: 16px;
-   color: white;
-   font-weight: 700px;
-   font-size: 18px;
+   //margin-top: 22px;
+   //padding: 16px;
    -webkit-transition: 0.6s ease;
    transition: 0.6s ease;
-   border-radius: 0 3px 3px 0;
    transform: translate(0, -50%);
 }
 
+.prev {
+   left: -30px;
+}
 .next {
-   right: 15px;
-   border-radius: 3px 0 0 3px;
+   right: -30px;
 }
 
-.prev:hover,
+.prev:hover {
+   left: -35px;
+}
 .next:hover {
-   background-color: rgba(0, 0, 0, 0.36);
+   right: -35px;
 }
 
 .active,
