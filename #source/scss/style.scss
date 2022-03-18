@@ -790,18 +790,21 @@ $minwidth: 320px;
 .next {
    cursor: pointer;
    position: absolute;
-   width: 3.5%;
+   width: 10%;
    padding: 0 0 12.5% 0;
    top: 50%;
+   background-size: contain;
    //margin-top: 22px;
    //padding: 16px;
    -webkit-transition: 0.6s ease;
    transition: 0.6s ease;
    transform: translate(0, -50%);
+   z-index: 4;
 }
 
 .prev {
    left: -30px;
+   background-position: left;
    @media (max-width: 800px) {
       left: -25px;
    }
@@ -814,6 +817,7 @@ $minwidth: 320px;
 }
 .next {
    right: -30px;
+   background-position: right;
    @media (max-width: 800px) {
       right: -25px;
    }
