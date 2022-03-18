@@ -845,12 +845,26 @@ $minwidth: 320px;
 
 .customers {
    max-width: 540px;
-   margin: 0 auto;
+   margin: 0 auto 50px;
    @include flexbox();
    justify-content: space-between;
    &__link {
+      position: relative;
       color: #000;
       display: block;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      &.active::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         background-color: #000;
+         width: 100%;
+         height: 1px;
+      }
    }
 }
 .text {
