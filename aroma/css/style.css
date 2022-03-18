@@ -1179,7 +1179,7 @@ html {
    padding: 5px;
    background-color: #7461f1;
    color: #fff;
-   font-size: 16px;
+   font-size: 20px;
    bottom: 0;
    right: 0;
    z-index: 5;
@@ -1188,6 +1188,6 @@ html {
 
 @media (min-width: 768px) {
    .back {
-      font-size: 25px;
+      font-size: 35px;
    }
 }
