@@ -107,7 +107,13 @@ function showSlides(n) {
    slides[slideIndex - 1].style.display = "block";
 }
 
-//setInterval(plusSlides, 10000, +1)
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+prev.addEventListener('click', () => plusSlides(-1));
+next.addEventListener('click', () => plusSlides(1));
+
+
+setInterval(plusSlides, 10000, +1)
 
 
 
