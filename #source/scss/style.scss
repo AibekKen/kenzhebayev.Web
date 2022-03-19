@@ -736,6 +736,7 @@ $minwidth: 320px;
 //==========================================
 
 .slide {
+   margin: 0 0 100px 0;
 }
 
 .slideshow-container {
@@ -943,5 +944,104 @@ $minwidth: 320px;
       align-items: center;
    }
 }
-.text {
+//============================================================process
+.process {
+   &__owner-words {
+      margin: 0 0 70px 0;
+   }
+
+   &__stages {
+   }
+}
+.owner-words {
+   @include flexbox();
+   justify-content: flex-end;
+   align-items: center;
+   &__text {
+      max-width: 540px;
+      text-align: center;
+      margin: 0 50px 0 0;
+      @media (max-width: 934px) {
+         font-size: 1.1em;
+      }
+      @media (max-width: 768px) {
+         margin: 0 20px 0 0;
+      }
+      @media (max-width: 610px) {
+         font-size: 1em;
+      }
+      @media (max-width: 670px) {
+         width: 100%;
+      }
+   }
+
+   &__image {
+      @include flex(0 0 16%);
+      padding: 0 0 15% 0;
+   }
+}
+
+.stages {
+   @include flexbox();
+
+   justify-content: space-evenly;
+   @media (max-width: 720px) {
+      flex-direction: column;
+   }
+   &__item {
+      width: 195px;
+      @include flexbox();
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 1072px) {
+         width: 130px;
+      }
+      @media (max-width: 768px) {
+         width: 120px;
+      }
+
+      @media (max-width: 720px) {
+         flex-direction: row;
+         width: 100%;
+      }
+   }
+
+   &__dot {
+      margin: 17px 0 0 0;
+      width: 15px;
+      height: 15px;
+      background: #c4c4c4;
+      border-radius: 50%;
+      @media (max-width: 720px) {
+         margin: 0 0 0 17px;
+      }
+   }
+}
+.item {
+   &__point {
+      width: 39%;
+      padding: 0 0 39% 0;
+      background: #5136f9;
+      border-radius: 50%;
+      margin: 0 0 15px 0;
+      @media (max-width: 720px) {
+         @include flex(0 0 16.7%);
+         padding: 0 0 16.7% 0;
+         margin: 10px 15px 10px 0;
+      }
+   }
+
+   &__text {
+      @include flex(0 0 83.3%);
+      text-align: center;
+      margin: 0 0 0 0;
+      @media (max-width: 1072px) {
+         font-size: var(--fontsize4);
+      }
+
+      @media (max-width: 720px) {
+         text-align: left;
+         max-width: 720px;
+      }
+   }
 }
