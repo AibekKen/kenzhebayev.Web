@@ -143,6 +143,9 @@ $minwidth: 320px;
    @media (orientation: landscape) and (max-width: 1600px) {
       height: 100vh;
    }
+   @media (max-width: 420px) and (min-height: 668px) {
+      height: 100vh;
+   }
    @media (max-width: 460px) {
       margin: 0 0 50px 0;
    }
