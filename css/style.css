@@ -1458,8 +1458,34 @@ html {
   }
 }
 
+.price {
+  padding: 100px 0 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(81, 54, 249, 0)), color-stop(10%, #5136f9), color-stop(43.76%, #5136f9), color-stop(90.6%, #5136f9), to(rgba(81, 54, 249, 0)));
+  background: linear-gradient(180deg, rgba(81, 54, 249, 0) 0%, #5136f9 10%, #5136f9 43.76%, #5136f9 90.6%, rgba(81, 54, 249, 0) 100%);
+  color: #ffff;
+}
 .price__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 0 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 880px) {
+  .price__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .tariff-block {
   max-width: 300px;
@@ -1470,15 +1496,20 @@ html {
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
+@media (max-width: 880px) {
+  .tariff-block {
+    margin: 0 0 50px 0;
+  }
+}
 .tariff-block__name {
   text-align: center;
-  line-height: 70px;
-  height: 70px;
+  line-height: 60px;
+  height: 60px;
   background: #00d49f;
   margin: 0 0 20px 0;
 }
 .tariff-block__conditions-list {
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
 }
 .tariff-block__order-buttom {
   display: block;
@@ -1529,17 +1560,21 @@ html {
   position: relative;
   font-size: 1.14em;
   padding: 0 20px 0 50px;
-  height: 37px;
-  margin: 0 0 10px 0;
+  height: 26px;
+  margin: 0 0 15px 0;
+}
+
+.conditions-list li:last-child {
+  display: block;
 }
 
 .conditions-list li::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 0px;
   left: 15px;
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 25.51px;
   background: url(../img/icons/mark1.svg) center center/cover no-repeat;
   -webkit-filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.37));
           filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.37));
