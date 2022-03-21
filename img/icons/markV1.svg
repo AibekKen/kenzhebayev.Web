@@ -1,0 +1,32 @@
+<svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_52_188)">
+<rect x="4" y="0.102051" width="25" height="25.5102" rx="5" fill="#C4C4C4" fill-opacity="0.25" shape-rendering="crispEdges"/>
+<rect x="5.5" y="1.60205" width="22" height="22.5102" rx="3.5" stroke="#449FB3" stroke-width="3" shape-rendering="crispEdges"/>
+</g>
+<g filter="url(#filter1_d_52_188)">
+<rect width="3.44036" height="18.7238" rx="1.72018" transform="matrix(0.861596 -0.507595 0.492444 0.870344 9 6.1543)" fill="#47F00C"/>
+<rect width="3.50255" height="23.2496" rx="1.75128" transform="matrix(0.861596 0.507595 -0.492444 0.870344 27.9822 0.102539)" fill="#47F00C"/>
+</g>
+<defs>
+<filter id="filter0_d_52_188" x="0" y="0.102051" width="33" height="33.5103" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_188"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_188" result="shape"/>
+</filter>
+<filter id="filter1_d_52_188" x="5.62183" y="0.750977" width="28.7451" height="29.0625" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_52_188"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_52_188" result="shape"/>
+</filter>
+</defs>
+</svg>
