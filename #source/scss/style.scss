@@ -986,7 +986,7 @@ $minwidth: 320px;
 
 .stages {
    @include flexbox();
-
+   margin: 0 0 100px 0;
    justify-content: space-evenly;
    @media (max-width: 720px) {
       flex-direction: column;
@@ -1047,4 +1047,50 @@ $minwidth: 320px;
          max-width: 720px;
       }
    }
+}
+//================================================================================PRICE
+.price {
+   &__title {
+   }
+
+   &__body {
+   }
+
+   &__tariff-block {
+   }
+
+   &__notice {
+   }
+}
+.container {
+}
+.section-title {
+}
+.tariff-block {
+   &__count {
+   }
+
+   &__name {
+   }
+
+   &__conditions-list {
+   }
+
+   &__order-buttom {
+   }
+}
+.count {
+   &__current {
+   }
+
+   &__promo {
+   }
+}
+.text {
+}
+.section-subtitle {
+}
+.conditions-list {
+}
+.buttom {
 }
