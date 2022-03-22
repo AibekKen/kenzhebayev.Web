@@ -14,8 +14,8 @@ ibg();
 //=============== Анимация при загрузки страницы на главной
 const mainTitle = document.querySelector('.main-screen__title');
 const offerText = document.querySelector('.offer__text');
-const orderBtn = document.querySelector('.offer__order-buttom');
-const moreBtn = document.querySelector('.offer__more-buttom');
+const orderBtn = document.querySelector('.offer__order-button');
+const moreBtn = document.querySelector('.offer__more-button');
 const mainImage = document.querySelector('.main-screen__image');
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
    offerText.classList.add('active');
    orderBtn.classList.add('active');
    moreBtn.classList.add('active');
-
 })
 
 
@@ -68,7 +67,7 @@ menuLink.forEach((link, index) => link.addEventListener('click', () => {
    document.body.classList.remove('lock');
    block.classList.remove('block');
 }))
-//==================
+//==================Portfolio slider
 const customersLink = document.querySelectorAll('.customers__link');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -136,13 +135,36 @@ const callbackForm = document.forms.callbackForm;
 const nameInput = callbackForm.nameInput;
 const phoneInput = callbackForm.phoneInput;
 const submitBtn = document.querySelector('.callback-form__submit-button')
+const tariffBtn = document.querySelectorAll('.tariff-block__order-button')
+const waLink = document.querySelector('.wa_link')
+let tariff = 'не выбран тариф';
+
+
+tariffBtn.forEach((button, i) => {
+   button.addEventListener('click', () => {
+      if (i == 0) {
+         tariff = 'тариф "Уникальный"'
+         waLink.href = 'https://api.whatsapp.com/send?phone=77073582648&text=Добрый день! Меня интересует тариф "Уникальный"...';
+      }
+      if (i == 1) {
+         tariff = 'тариф "Оптимальный"'
+         waLink.href = 'https://api.whatsapp.com/send?phone=77073582648&text=Добрый день! Меня интересует тариф "Опитмальый"...';
+      }
+      if (i == 2) {
+         tariff = 'тариф "Старт"'
+         waLink.href = 'https://api.whatsapp.com/send?phone=77073582648&text=Добрый день! Меня интересует тариф "Старт".....';
+      }
+   })
+
+})
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
-
    callbackForm.addEventListener('submit', (e) => {
       e.preventDefault();
       if (nameInput.value !== '' && phoneInput.value !== '') {
-         const urlSendMessage = `https://api.telegram.org/bot5099095003:AAHmj-amnO3awkeRobr5EzFlrR6ZyZotpUc/sendMessage?chat_id=658673865&text= ${nameInput.value} ${phoneInput.value};`
+         const urlSendMessage = `https://api.telegram.org/bot5099095003:AAHmj-amnO3awkeRobr5EzFlrR6ZyZotpUc/sendMessage?chat_id=658673865&text= Заявка ${tariff}  ${nameInput.value} ${phoneInput.value};`
          fetch(urlSendMessage)
          submitBtn.textContent = 'Отправлено'
          document.querySelectorAll('input').forEach((input) => {
@@ -162,3 +184,43 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => submitBtn.textContent = 'Отправить', 2000)
    })
 })
+
+//==================quiz slider
+
+const prevQ = document.querySelector('.prev-quistion');
+const nextQ = document.querySelector('.next-quistion');
+
+var quizIndex = 1;
+showQuiz(quizIndex);
+
+function plusQuiz(n) {
+   showQuiz(quizIndex += n);
+}
+
+function currentQuiz(n) {
+   showQuiz(quizIndex = n);
+}
+
+function showQuiz(n) {
+   var i;
+   var quizes = document.getElementsByClassName("quiz-form__block");
+
+   if (n > quizes.length) {
+      quizIndex = 1;
+   }
+
+   if (n < 1) {
+      quizIndex = quizes.length;
+   }
+
+   for (i = 0; i < quizes.length; i++) {
+      quizes[i].style.visibility = "hidden";
+   }
+
+   quizes[quizIndex - 1].style.visibility = "visible";
+
+
+}
+
+prevQ.addEventListener('click', () => plusQuiz(-1));
+nextQ.addEventListener('click', () => plusQuiz(1));
