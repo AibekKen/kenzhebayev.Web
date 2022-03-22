@@ -1181,6 +1181,9 @@ $minwidth: 320px;
    &__body {
       @include flexbox();
       justify-content: space-between;
+      @media (max-width: 768px) {
+         flex-direction: column;
+      }
    }
 
    &__links {
@@ -1189,6 +1192,9 @@ $minwidth: 320px;
    &__quiz {
       @include flex(0 0 50%);
       align-self: start;
+      @media (max-width: 768px) {
+         width: 100%;
+      }
    }
 }
 
@@ -1275,6 +1281,10 @@ $minwidth: 320px;
    &__title {
       padding: 28px 0 0 100px;
       margin: 0 0 23px 0;
+      @media (max-width: 1000px) {
+         padding: 28px 0 0 60px;
+         margin: 0 0 15px 0;
+      }
    }
 
    &__quiz-form {
@@ -1283,6 +1293,9 @@ $minwidth: 320px;
 .quiz-form {
    width: 100%;
    padding: 0px 0 40% 60px;
+   @media (max-width: 1000px) {
+      padding: 0px 0 40% 30px;
+   }
 
    &__block {
       position: absolute;
@@ -1292,6 +1305,9 @@ $minwidth: 320px;
 
    &__question {
       margin: 0 0 10px 0;
+      @media (max-width: 1000px) {
+         margin: 0 0 5px 0;
+      }
    }
 
    &__answers {

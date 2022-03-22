@@ -1588,6 +1588,14 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .contacts__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .contacts__quiz {
   -webkit-box-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
@@ -1595,6 +1603,11 @@ html {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+}
+@media (max-width: 768px) {
+  .contacts__quiz {
+    width: 100%;
+  }
 }
 
 .links {
@@ -1704,9 +1717,20 @@ html {
   padding: 28px 0 0 100px;
   margin: 0 0 23px 0;
 }
+@media (max-width: 1000px) {
+  .quiz__title {
+    padding: 28px 0 0 60px;
+    margin: 0 0 15px 0;
+  }
+}
 .quiz-form {
   width: 100%;
   padding: 0px 0 40% 60px;
+}
+@media (max-width: 1000px) {
+  .quiz-form {
+    padding: 0px 0 40% 30px;
+  }
 }
 .quiz-form__block {
   position: absolute;
@@ -1715,6 +1739,11 @@ html {
 }
 .quiz-form__question {
   margin: 0 0 10px 0;
+}
+@media (max-width: 1000px) {
+  .quiz-form__question {
+    margin: 0 0 5px 0;
+  }
 }
 .quiz-form__input-block {
   margin: 0 0 10px 0;
