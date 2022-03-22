@@ -466,17 +466,17 @@ html {
     padding: 0 10px;
   }
 }
-.buttom {
+.button {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.buttom:hover {
+.button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 @media (max-width: 460px) {
-  .buttom:hover {
+  .button:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
@@ -512,7 +512,7 @@ html {
 .offer__text.active {
   margin: 0 0 26px 0;
 }
-.offer__order-buttom {
+.offer__order-button {
   width: 264px;
   height: 72px;
   font-family: "Alegreya Sans";
@@ -527,42 +527,42 @@ html {
   transition: all 0.6s ease;
 }
 @media (max-width: 460px) {
-  .offer__order-buttom {
+  .offer__order-button {
     margin: 0 0 20px 0;
   }
 }
 @media (max-width: 720px) {
-  .offer__order-buttom {
+  .offer__order-button {
     width: 250px;
     height: 60px;
     line-height: 60px;
   }
 }
 @media (max-width: 602px) {
-  .offer__order-buttom {
+  .offer__order-button {
     width: 200px;
     height: 50px;
     line-height: 50px;
   }
 }
 @media (max-width: 500px) {
-  .offer__order-buttom {
+  .offer__order-button {
     width: 160px;
     height: 40px;
     line-height: 40px;
   }
 }
 @media (max-width: 370px) {
-  .offer__order-buttom {
+  .offer__order-button {
     width: 130px;
     height: 40px;
     line-height: 40px;
   }
 }
-.offer__order-buttom.active {
+.offer__order-button.active {
   margin: 0 0 30px 0;
 }
-.offer__more-buttom {
+.offer__more-button {
   width: 201.92px;
   height: 52px;
   font-size: var(--fontsize3);
@@ -576,34 +576,34 @@ html {
   transition: all 0.6s ease;
 }
 @media (max-width: 720px) {
-  .offer__more-buttom {
+  .offer__more-button {
     width: 200px;
     height: 50px;
     line-height: 50px;
   }
 }
 @media (max-width: 602px) {
-  .offer__more-buttom {
+  .offer__more-button {
     width: 140px;
     height: 40px;
     line-height: 40px;
   }
 }
 @media (max-width: 500px) {
-  .offer__more-buttom {
+  .offer__more-button {
     width: 130px;
     height: 40px;
     line-height: 40px;
   }
 }
 @media (max-width: 370px) {
-  .offer__more-buttom {
+  .offer__more-button {
     width: 110px;
     height: 30px;
     line-height: 30px;
   }
 }
-.offer .offer__more-buttom.active {
+.offer .offer__more-button.active {
   margin-right: 0px;
 }
 
@@ -1511,7 +1511,7 @@ html {
 .tariff-block__conditions-list {
   margin: 0 0 40px 0;
 }
-.tariff-block__order-buttom {
+.tariff-block__order-button {
   display: block;
   width: 160px;
   height: 53px;
@@ -1578,4 +1578,95 @@ html {
   background: url(../img/icons/mark1.svg) center center/cover no-repeat;
   -webkit-filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.37));
           filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.37));
+}
+
+.links {
+  max-width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.links__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 18px 0;
+}
+.links__icon {
+  width: 71px;
+  height: 71px;
+  margin: 0 20px 0 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.links__icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.links__text {
+  color: #000;
+}
+
+.callback-form {
+  width: 280px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+.callback-form__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #c4c4c4;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 15px 15px 15px 25px;
+  margin: 0 0 25px 0;
+}
+.callback-form__input::-webkit-input-placeholder {
+  font-size: var(--fontsize4);
+}
+.callback-form__input::-moz-placeholder {
+  font-size: var(--fontsize4);
+}
+.callback-form__input:-ms-input-placeholder {
+  font-size: var(--fontsize4);
+}
+.callback-form__input::-ms-input-placeholder {
+  font-size: var(--fontsize4);
+}
+.callback-form__input::placeholder {
+  font-size: var(--fontsize4);
+}
+.callback-form__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.callback-form__input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.callback-form__input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.callback-form__input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+.callback-form__input:focus::placeholder {
+  opacity: 0;
+}
+.callback-form__submit-button {
+  height: 50px;
+  width: 220px;
+  background: #e72cbe;
+  border-radius: 15px;
+  color: #ffff;
 }
