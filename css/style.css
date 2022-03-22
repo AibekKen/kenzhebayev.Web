@@ -1670,3 +1670,8 @@ html {
   border-radius: 15px;
   color: #ffff;
 }
+
+.err {
+  -webkit-box-shadow: 0 0 15px #ec1919da;
+          box-shadow: 0 0 15px #ec1919da;
+}

@@ -519,11 +519,12 @@
                               Обратный звонок
                            </div>
                         </a>
-                        <form action="#" class="callback-form" id="callback-form">
-                           <input type="text" class="callback-form__input callback-form__input_name" placeholder="Имя">
-                           <input type=" tel" class="callback-form__input callback-form__input_phone"
-                              placeholder="Телефон">
-                           <button type="submit"
+                        <form action="#" class="callback-form" id="callback-form" name="callbackForm">
+                           <input type="text" tabindex="1" class="callback-form__input callback-form__input_name"
+                              name="nameInput" placeholder="Имя" autocomplete="off">
+                           <input type=" tel" tabindex="2" class="callback-form__input callback-form__input_phone"
+                              name="phoneInput" placeholder="Телефон" autocomplete="off">
+                           <button type="submit" tabindex="3"
                               class="callback-form__submit-button button section-subtitle">Отправить</button>
                         </form>
                      </div>

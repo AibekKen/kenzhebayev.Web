@@ -128,3 +128,37 @@ customersLink.forEach((link, i) => {
       currentSlide(i + 1);
    })
 })
+
+
+//========Обработка формы
+
+const callbackForm = document.forms.callbackForm;
+const nameInput = callbackForm.nameInput;
+const phoneInput = callbackForm.phoneInput;
+const submitBtn = document.querySelector('.callback-form__submit-button')
+
+document.addEventListener('DOMContentLoaded', () => {
+
+   callbackForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (nameInput.value !== '' && phoneInput.value !== '') {
+         const urlSendMessage = `https://api.telegram.org/bot5099095003:AAHmj-amnO3awkeRobr5EzFlrR6ZyZotpUc/sendMessage?chat_id=658673865&text= ${nameInput.value} ${phoneInput.value};`
+         fetch(urlSendMessage)
+         submitBtn.textContent = 'Отправлено'
+         document.querySelectorAll('input').forEach((input) => {
+            input.classList.remove('err')
+         })
+         nameInput.value = '';
+         phoneInput.value = ''
+
+      }
+      else {
+         submitBtn.textContent = 'Пустое поле'
+         document.querySelectorAll('input').forEach((input) => {
+            input.classList.add('err')
+         })
+      }
+
+      setTimeout(() => submitBtn.textContent = 'Отправить', 2000)
+   })
+})
