@@ -1181,18 +1181,13 @@ $minwidth: 320px;
 
 //===========================================================Contacts
 .contacts {
-   &__title {
-   }
-
+   margin: 0 0 100px 0;
    &__body {
       @include flexbox();
       justify-content: space-between;
       @media (max-width: 768px) {
          flex-direction: column;
       }
-   }
-
-   &__links {
    }
 
    &__quiz {
@@ -1236,10 +1231,6 @@ $minwidth: 320px;
       color: #000;
    }
 }
-.ibg {
-}
-.text {
-}
 .callback-form {
    width: 280px;
    align-self: end;
@@ -1273,7 +1264,7 @@ $minwidth: 320px;
    box-shadow: 0 0 15px #ec1919da;
 }
 
-//============
+//==================================================quiz
 
 .quiz {
    position: relative;
@@ -1456,5 +1447,35 @@ $minwidth: 320px;
    display: none;
 }
 
-* .quiz-fade {
+//======================================footer
+.footer {
+   background-color: #3f3d3d;
+}
+.footer__row {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   height: 80px;
+}
+@media (max-width: 350px) {
+   .footer__row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+   }
+}
+.footer__column {
+   font-size: 1em;
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
 }
