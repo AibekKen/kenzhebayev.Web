@@ -29,25 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/* код для запуска анимации при появлении блока в зоне видимости. Хорошо для десктопа но трудно для мобильных
-const aboutProductBody = document.querySelector('.about-product__body');
-const labels = document.querySelectorAll('.label');
-function show_onscroll() {
-   let wt = window.scrollY;
-   let wh = document.body.clientHeight;
-   let eh = aboutProductBody.offsetHeight;
-   let et = aboutProductBody.offsetTop;
-   if (wt + wh > et + eh * 0.4)
-      return true;
-}
-
-window.addEventListener('scroll', function (e) {
-   if (show_onscroll()) {
-      aboutProductBody.classList.add("active");
-      labels.forEach((label) => label.classList.add("active"));
-   }
-});
-*/
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__menu');
 const menuLink = document.querySelectorAll('.menu__link');
@@ -234,8 +215,8 @@ function showQuiz(n) {
 
    quizes[quizIndex - 1].style.display = "block";
 
-
 }
+
 
 prevQ.addEventListener('click', () => plusQuiz(-1));
 nextQ.addEventListener('click', () => plusQuiz(1));
@@ -303,3 +284,40 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => quizSubmutBtn.textContent = 'Отправить', 2000)
    })
 })
+
+const navBtn = document.querySelector('.navigation__logo');
+const navIcons = document.querySelectorAll('.nav-icon');
+const navLinks = document.querySelectorAll('.navigation__link');
+navBtn.addEventListener('click', (e) => {
+   e.preventDefault();
+   navIcons.forEach((icon) => {
+      icon.classList.toggle('active');
+   })
+   navLinks.forEach((link) => {
+      link.classList.toggle('active');
+   })
+})
+
+
+/* код для запуска анимации при появлении блока в зоне видимости. Хорошо для десктопа но трудно для мобильных*/
+const content = document.querySelector('.content');
+const main = document.querySelector('.main-screen');
+const navBlock = document.querySelector('.navigation');
+function show_onscroll() {
+   let wt = window.scrollY;
+   let wh = document.body.clientHeight;
+   let eh = content.offsetHeight;
+   let et = content.offsetTop;
+   if (wt + wh > et + eh * 0.2)
+      return true;
+}
+
+window.addEventListener('scroll', function (e) {
+   if (show_onscroll()) {
+      navBlock.classList.add("active");
+   }
+   else {
+      navBlock.classList.remove("active");
+   }
+});
+
