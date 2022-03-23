@@ -1194,6 +1194,7 @@ $minwidth: 320px;
       align-self: start;
       @media (max-width: 768px) {
          width: 100%;
+         margin: 0 auto;
       }
    }
 }
@@ -1296,10 +1297,19 @@ $minwidth: 320px;
    @media (max-width: 1000px) {
       padding: 0px 0 40% 30px;
    }
+   @media (max-width: 768px) {
+      padding: 0px 0 250px 30px;
+   }
+   @media (max-width: 630px) {
+      font-size: 1em;
+   }
+   @media (max-width: 430px) {
+      padding: 0px 0 250px 20px;
+   }
 
    &__block {
       position: absolute;
-      width: 80%;
+      width: 90%;
       height: 100%;
    }
 
@@ -1385,6 +1395,9 @@ $minwidth: 320px;
    align-content: center;
    border-radius: 50%;
    right: 250px;
+   @media (max-width: 768px) {
+      right: 180px;
+   }
 }
 .prev-quistion {
 }
@@ -1396,6 +1409,9 @@ $minwidth: 320px;
    line-height: 44px;
    border-radius: 25px;
    right: 95px;
+   @media (max-width: 768px) {
+      right: 20px;
+   }
 }
 
 * .quiz-fade {

@@ -1607,6 +1607,7 @@ html {
 @media (max-width: 768px) {
   .contacts__quiz {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -1732,9 +1733,24 @@ html {
     padding: 0px 0 40% 30px;
   }
 }
+@media (max-width: 768px) {
+  .quiz-form {
+    padding: 0px 0 250px 30px;
+  }
+}
+@media (max-width: 630px) {
+  .quiz-form {
+    font-size: 1em;
+  }
+}
+@media (max-width: 430px) {
+  .quiz-form {
+    padding: 0px 0 250px 20px;
+  }
+}
 .quiz-form__block {
   position: absolute;
-  width: 80%;
+  width: 90%;
   height: 100%;
 }
 .quiz-form__question {
@@ -1821,6 +1837,11 @@ html {
   border-radius: 50%;
   right: 250px;
 }
+@media (max-width: 768px) {
+  .prev-quistion {
+    right: 180px;
+  }
+}
 
 .next-quistion {
   display: block;
@@ -1830,6 +1851,11 @@ html {
   line-height: 44px;
   border-radius: 25px;
   right: 95px;
+}
+@media (max-width: 768px) {
+  .next-quistion {
+    right: 20px;
+  }
 }
 
 * .quiz-fade {
