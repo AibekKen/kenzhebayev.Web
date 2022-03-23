@@ -511,23 +511,23 @@
                               <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
                                     <input id="text" type="checkbox" name="text" value="текст"
-                                       class="quiz-form__checkbox">
+                                       class="quiz-form__checkbox quiz-checkbox">
                                     <label class="quiz-form__checkbox-label" for="text">Текст</label>
                                  </div>
                                  <div class="quiz-form__input-block">
                                     <input id="image" type="checkbox" name="image" value="изображения"
-                                       class="quiz-form__checkbox">
+                                       class="quiz-form__checkbox  quiz-checkbox">
                                     <label class="quiz-form__checkbox-label" class="quiz-form__checkbox-label"
                                        class="quiz-form__checkbox-label" for="image">Изображения</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="video" type="checkbox" name="video" value="Видео"
-                                       class="quiz-form__checkbox">
+                                    <input id="video" type="checkbox" name="video" value="видео"
+                                       class="quiz-form__checkbox  quiz-checkbox">
                                     <label class="quiz-form__checkbox-label" for="video">Видео</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="nocontent" type="checkbox" name="Нет матриалов" value="nocontent"
-                                       class="quiz-form__checkbox">
+                                    <input id="nocontent" type="checkbox" name="nocontent" value="нет материалов"
+                                       class="quiz-form__checkbox  quiz-checkbox">
                                     <label class="quiz-form__checkbox-label" for="nocontent">Нет материалов</label>
                                  </div>
                               </div>
@@ -539,25 +539,25 @@
                               </div>
                               <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
-                                    <input id="text2" type="radio" name="target" value="реклама"
+                                    <input id="forads" type="radio" name="target" value="реклама"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="text2">Для запуска рекламы</label>
+                                    <label for="forads" class="quiz-form__checkbox-label">Для запуска рекламы</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="image2" type="radio" name="target" value="визитка"
+                                    <input id="business-card" type="radio" name="target" value="визитка"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="image2">Сайт-визитка для
+                                    <label class="quiz-form__checkbox-label" for="business-card">Сайт-визитка для
                                        компании</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="video2" type="radio" name="target" value="другое"
+                                    <input id="other" type="radio" name="target" value="другое"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="video2">Другое</label>
+                                    <label for="other" class="quiz-form__checkbox-label">Другое</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="nocontent2" type="radio" name="target" value="не знаю"
+                                    <input checked id="dontknow" type="radio" name="target" value="не знаю"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="nocontent2">Не знаю</label>
+                                    <label for="dontknow" class="quiz-form__checkbox-label">Не знаю</label>
                                  </div>
                               </div>
                            </div>
@@ -576,7 +576,7 @@
                               </div>
                               <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
-                                    <input type="text" name="siteTheme" class="quiz-form__input-text"
+                                    <input type="text" name="siteLike" class="quiz-form__input-text"
                                        placeholder="Название(sitename.com)...">
                                  </div>
                               </div>
@@ -587,11 +587,13 @@
                               </div>
                               <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
-                                    <input type="text" name="name" class="quiz-form__input-text" placeholder="Имя">
+                                    <input type="text" name="nameQ" class="quiz-form__input-text necessary-input"
+                                       placeholder="Имя">
                                  </div>
                               </div>
                               <div class="quiz-form__input-block">
-                                 <input type="tel" name="phone" class="quiz-form__input-text" placeholder="Телефон">
+                                 <input type="tel" name="phoneQ" class="quiz-form__input-text necessary-input"
+                                    placeholder="Телефон">
                               </div>
                            </div>
                            <a class="prev-quistion button">

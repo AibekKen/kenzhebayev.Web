@@ -137,21 +137,21 @@ const phoneInput = callbackForm.phoneInput;
 const submitBtn = document.querySelector('.callback-form__submit-button')
 const tariffBtn = document.querySelectorAll('.tariff-block__order-button')
 const waLink = document.querySelector('.wa_link')
-let tariff = 'не выбран тариф';
+let tariff = 'не выбран';
 
 
 tariffBtn.forEach((button, i) => {
    button.addEventListener('click', () => {
       if (i == 0) {
-         tariff = 'тариф "Уникальный"'
+         tariff = '"Уникальный"'
          waLink.href = 'https://api.whatsapp.com/send?phone=77073582648&text=Добрый день! Меня интересует тариф "Уникальный"...';
       }
       if (i == 1) {
-         tariff = 'тариф "Оптимальный"'
+         tariff = '"Оптимальный"'
          waLink.href = 'https://api.whatsapp.com/send?phone=77073582648&text=Добрый день! Меня интересует тариф "Опитмальый"...';
       }
       if (i == 2) {
-         tariff = 'тариф "Старт"'
+         tariff = '"Старт"'
          waLink.href = 'https://api.whatsapp.com/send?phone=77073582648&text=Добрый день! Меня интересует тариф "Старт".....';
       }
    })
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
    callbackForm.addEventListener('submit', (e) => {
       e.preventDefault();
       if (nameInput.value !== '' && phoneInput.value !== '') {
-         const urlSendMessage = `https://api.telegram.org/bot5099095003:AAHmj-amnO3awkeRobr5EzFlrR6ZyZotpUc/sendMessage?chat_id=658673865&text= Заявка ${tariff}  ${nameInput.value} ${phoneInput.value};`
+         const urlSendMessage = `https://api.telegram.org/bot5099095003:AAHmj-amnO3awkeRobr5EzFlrR6ZyZotpUc/sendMessage?chat_id=658673865&text= Заявка:%0AТариф: ${tariff}%0AИмя: ${nameInput.value}%0AТелефон: ${phoneInput.value};`
          fetch(urlSendMessage)
          submitBtn.textContent = 'Отправлено'
          document.querySelectorAll('input').forEach((input) => {
@@ -239,3 +239,67 @@ function showQuiz(n) {
 
 prevQ.addEventListener('click', () => plusQuiz(-1));
 nextQ.addEventListener('click', () => plusQuiz(1));
+
+
+const quizForm = document.forms.quizForm;
+const nameInputQ = quizForm.nameQ;
+const phoneInputQ = quizForm.phoneQ;
+const tagetInput = quizForm.target;
+const siteThemeInput = quizForm.siteTheme;
+const siteLikeInput = quizForm.siteLike;
+const necessaryInput = document.querySelectorAll('.necessary-input')
+
+
+quizForm.nocontent.checked = true;
+const materials = document.querySelectorAll('.quiz-checkbox');
+for (let i = 0; i < materials.length - 1; i++) {
+   materials[i].addEventListener('click', () => {
+      if (materials[i].checked) {
+         quizForm.nocontent.checked = false;
+      }
+   })
+}
+
+quizForm.nocontent.addEventListener('click', () => {
+   if (quizForm.nocontent.checked) {
+      for (let i = 0; i < materials.length - 1; i++) {
+         materials[i].checked = false;
+      }
+   }
+})
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+   quizForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (nameInputQ.value !== '' && phoneInputQ.value !== '') {
+         let materialsText = '';
+         for (let i = 0; i < materials.length; i++) {
+            if (materials[i].checked) {
+               materialsText += ` ${materials[i].value},`
+            }
+         }
+         
+         materialsText = materialsText.slice(0, materialsText.length - 1) + '.';
+
+         const urlSendMessage = `https://api.telegram.org/bot5099095003:AAHmj-amnO3awkeRobr5EzFlrR6ZyZotpUc/sendMessage?chat_id=658673865&text= Заявка по Квиз:%0AГотовые материалы: ${materialsText}%0AСфера деятельности: ${siteThemeInput.value}%0AНравиться сайт: ${siteLikeInput.value}%0AЦель сайта: ${tagetInput.value}%0AТариф: ${tariff}%0AИмя: ${nameInputQ.value}%0AТелефон: ${phoneInputQ.value};`
+         fetch(urlSendMessage)
+         quizSubmutBtn.textContent = 'Отправлено'
+         necessaryInput.forEach((input) => {
+            input.classList.remove('err')
+         })
+         nameInputQ.value = '';
+         phoneInputQ.value = ''
+
+      }
+      else {
+         quizSubmutBtn.textContent = 'Не заполнено'
+         necessaryInput.forEach((input) => {
+            input.classList.add('err')
+         })
+      }
+
+      setTimeout(() => quizSubmutBtn.textContent = 'Отправить', 2000)
+   })
+})
