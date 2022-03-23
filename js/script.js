@@ -288,6 +288,16 @@ document.addEventListener('DOMContentLoaded', () => {
 const navBtn = document.querySelector('.navigation__logo');
 const navIcons = document.querySelectorAll('.nav-icon');
 const navLinks = document.querySelectorAll('.navigation__link');
+
+navLinks.forEach((link) => {
+   link.addEventListener('click', () => {
+      for (let i = 0; i < navLinks.length; i++) {
+         navLinks[i].classList.remove('active')
+         navIcons[i].classList.remove('active')
+      }
+   })
+});
+
 navBtn.addEventListener('click', (e) => {
    e.preventDefault();
    navIcons.forEach((icon) => {
@@ -295,8 +305,12 @@ navBtn.addEventListener('click', (e) => {
    })
    navLinks.forEach((link) => {
       link.classList.toggle('active');
+      link.addEventListener('clik', () => {
+         link.classList.remove('active');
+      })
    })
 })
+
 
 
 /* код для запуска анимации при появлении блока в зоне видимости. Хорошо для десктопа но трудно для мобильных*/
