@@ -1740,6 +1740,7 @@ html {
       -ms-user-select: none;
           user-select: none;
 }
+
 .quiz-form {
   width: 85%;
   padding: 0px 0 40% 0px;
@@ -1748,6 +1749,11 @@ html {
 @media (max-width: 768px) {
   .quiz-form {
     padding: 0px 0 250px 0px;
+  }
+}
+@media (max-width: 820px) {
+  .quiz-form {
+    font-size: 1.2em;
   }
 }
 @media (max-width: 630px) {

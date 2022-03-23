@@ -1252,10 +1252,6 @@ $minwidth: 320px;
       border-radius: 15px;
       padding: 15px 15px 15px 25px;
       margin: 0 0 25px 0;
-      &_name {
-      }
-      &_phone {
-      }
    }
    &__input::placeholder {
       font-size: var(--fontsize4);
@@ -1277,8 +1273,6 @@ $minwidth: 320px;
    box-shadow: 0 0 15px #ec1919da;
 }
 
-.button {
-}
 //============
 
 .quiz {
@@ -1298,9 +1292,6 @@ $minwidth: 320px;
       -khtml-user-select: none;
       user-select: none;
    }
-
-   &__quiz-form {
-   }
 }
 .quiz-form {
    width: 85%;
@@ -1309,6 +1300,10 @@ $minwidth: 320px;
    @media (max-width: 768px) {
       padding: 0px 0 250px 0px;
    }
+   @media (max-width: 820px) {
+      font-size: 1.2em;
+   }
+
    @media (max-width: 630px) {
       font-size: 1em;
    }
