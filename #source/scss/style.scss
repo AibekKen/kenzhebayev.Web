@@ -886,7 +886,7 @@ $minwidth: 320px;
 
 * .fade {
    -webkit-animation-name: fade;
-   -webkit-animation-duration: 1.5s;
+   -webkit-animation-duration: 1s;
    animation-name: fade;
    -webkit-animation-timing-function: ease-in;
    animation-timing-function: ease-in;
@@ -1367,6 +1367,7 @@ $minwidth: 320px;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
+      z-index: 0;
    }
    &__input-text {
       padding: 0 0 0 10px;
@@ -1455,11 +1456,8 @@ $minwidth: 320px;
 }
 
 * .quiz-fade {
-   -webkit-animation-name: fade;
-   -webkit-animation-duration: 1.5s;
-   animation-name: fade;
-   -webkit-animation-timing-function: ease-in;
-   animation-timing-function: ease-in;
-   -webkit-animation-duration: 1s;
-   animation-duration: 1s;
 }
+
+-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;

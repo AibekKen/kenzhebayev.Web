@@ -229,10 +229,10 @@ function showQuiz(n) {
 
 
    for (i = 0; i < quizes.length; i++) {
-      quizes[i].style.visibility = "hidden";
+      quizes[i].style.display = "none";
    }
 
-   quizes[quizIndex - 1].style.visibility = "visible";
+   quizes[quizIndex - 1].style.display = "block";
 
 
 }
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
                materialsText += ` ${materials[i].value},`
             }
          }
-         
+
          materialsText = materialsText.slice(0, materialsText.length - 1) + '.';
 
          const urlSendMessage = `https://api.telegram.org/bot5099095003:AAHmj-amnO3awkeRobr5EzFlrR6ZyZotpUc/sendMessage?chat_id=658673865&text= Заявка по Квиз:%0AГотовые материалы: ${materialsText}%0AСфера деятельности: ${siteThemeInput.value}%0AНравиться сайт: ${siteLikeInput.value}%0AЦель сайта: ${tagetInput.value}%0AТариф: ${tariff}%0AИмя: ${nameInputQ.value}%0AТелефон: ${phoneInputQ.value};`

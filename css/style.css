@@ -1245,7 +1245,7 @@ html {
 
 * .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
   -webkit-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
@@ -1809,6 +1809,7 @@ html {
   -o-transform: scale(0);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 0;
 }
 .quiz-form__input-text {
   padding: 0 0 0 10px;
@@ -1915,14 +1916,4 @@ html {
 
 .next-quistion.last {
   display: none;
-}
-
-* .quiz-fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  -webkit-animation-timing-function: ease-in;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
 }
