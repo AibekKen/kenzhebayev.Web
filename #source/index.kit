@@ -506,7 +506,7 @@
                         <form action="#" class="quiz__quiz-form quiz-form text" name="quizForm">
                            <div class="quiz-form__block quiz-fade">
                               <div class="quiz-form__question">
-                                 Есть ли у вас готовый материал(текстовые, фото-видео) для контента сайта?
+                                 Есть ли у Вас готовый материал для наполнения сайта?
                               </div>
                               <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
@@ -532,70 +532,79 @@
                                  </div>
                               </div>
                            </div>
+
                            <div class="quiz-form__block quiz-fade">
                               <div class="quiz-form__question">
-                                 Есть ли у вас готовый материал(текстовые, фото-видео) для контента сайта?
+                                 Для чего Вам нужен сайт?
                               </div>
                               <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
-                                    <input id="text1" type="checkbox" name="text" value="текст"
+                                    <input id="text2" type="radio" name="target" value="реклама"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="text1">Текст</label>
+                                    <label class="quiz-form__checkbox-label" for="text2">Для запуска рекламы</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="image1" type="checkbox" name="image" value="изображения"
+                                    <input id="image2" type="radio" name="target" value="визитка"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="image1">Изображения</label>
+                                    <label class="quiz-form__checkbox-label" for="image2">Сайт-визитка для
+                                       компании</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="video1" type="checkbox" name="video" value="Видео"
+                                    <input id="video2" type="radio" name="target" value="другое"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="video1">Видео</label>
+                                    <label class="quiz-form__checkbox-label" for="video2">Другое</label>
                                  </div>
                                  <div class="quiz-form__input-block">
-                                    <input id="nocontent1" type="checkbox" name="Нет матриалов" value="nocontent"
+                                    <input id="nocontent2" type="radio" name="target" value="не знаю"
                                        class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="nocontent1">Нет материалов</label>
+                                    <label class="quiz-form__checkbox-label" for="nocontent2">Не знаю</label>
                                  </div>
                               </div>
                            </div>
                            <div class="quiz-form__block quiz-fade">
                               <div class="quiz-form__question">
-                                 Есть ли у вас готовый материал(текстовые, фото-видео) для контента сайта?
+                                 Для какой деятельности вы хотите создать сайт?
                               </div>
                               <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
-                                    <input id="text2" type="checkbox" name="text" value="текст"
-                                       class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="text2">Текст</label>
+                                    <input type="text" name="siteTheme" class="quiz-form__input-text"
+                                       placeholder="строительство, образавательная школа...">
                                  </div>
+                              </div>
+                              <div class="quiz-form__question">
+                                 Напишите пример сайта, который Вам понравился?
+                              </div>
+                              <div class="quiz-form__answers">
                                  <div class="quiz-form__input-block">
-                                    <input id="image2" type="checkbox" name="image" value="изображения"
-                                       class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="image2">Изображения</label>
-                                 </div>
-                                 <div class="quiz-form__input-block">
-                                    <input id="video2" type="checkbox" name="video" value="Видео"
-                                       class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="video2">Видео</label>
-                                 </div>
-                                 <div class="quiz-form__input-block">
-                                    <input id="nocontent2" type="checkbox" name="Нет матриалов" value="nocontent"
-                                       class="quiz-form__checkbox">
-                                    <label class="quiz-form__checkbox-label" for="nocontent2">Нет материалов</label>
+                                    <input type="text" name="siteTheme" class="quiz-form__input-text"
+                                       placeholder="Название(sitename.com)...">
                                  </div>
                               </div>
                            </div>
-                           <a class="prev-quistion">
+                           <div class="quiz-form__block quiz-fade">
+                              <div class="quiz-form__question">
+                                 Напишите Ваши данные, что бы мы могли с Вами связаться?
+                              </div>
+                              <div class="quiz-form__answers">
+                                 <div class="quiz-form__input-block">
+                                    <input type="text" name="name" class="quiz-form__input-text" placeholder="Имя">
+                                 </div>
+                              </div>
+                              <div class="quiz-form__input-block">
+                                 <input type="tel" name="phone" class="quiz-form__input-text" placeholder="Телефон">
+                              </div>
+                           </div>
+                           <a class="prev-quistion button">
                               <img src="../img/icons/arrowmini.svg" alt="">
                            </a>
-                           <a class="next-quistion">
+                           <a class="next-quistion button">
                               Далее
                            </a>
-                           <button class="quiz-submit" type="submit">Отправить</button>
+                           <button class="quiz-submit button" type="submit">Отправить</button>
                         </form>
                      </div>
                   </div>
+                  *отправляя свои данные вы даете свое согласие на сбор и обработку ваших персональных данных.
                </div>
             </div>
 

@@ -2,7 +2,7 @@
 function ibg() {
 
    let ibg = document.querySelectorAll(".ibg");
-   for (var i = 0; i < ibg.length; i++) {
+   for (let i = 0; i < ibg.length; i++) {
       if (ibg[i].querySelector('img')) {
          ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
       }
@@ -72,7 +72,7 @@ const customersLink = document.querySelectorAll('.customers__link');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -84,8 +84,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-   var i;
-   var slides = document.getElementsByClassName("mySlides");
+   let i;
+   let slides = document.getElementsByClassName("mySlides");
 
    if (n > slides.length) {
       slideIndex = 1;
@@ -189,8 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const prevQ = document.querySelector('.prev-quistion');
 const nextQ = document.querySelector('.next-quistion');
+const quizSubmutBtn = document.querySelector('.quiz-submit');
 
-var quizIndex = 1;
+
+let quizIndex = 1;
 showQuiz(quizIndex);
 
 function plusQuiz(n) {
@@ -201,17 +203,30 @@ function currentQuiz(n) {
    showQuiz(quizIndex = n);
 }
 
+
 function showQuiz(n) {
-   var i;
-   var quizes = document.getElementsByClassName("quiz-form__block");
+   let i;
+   let quizes = document.getElementsByClassName("quiz-form__block");
 
-   if (n > quizes.length) {
-      quizIndex = 1;
+   if (n === quizes.length) {
+      quizSubmutBtn.classList.add('active');
+      nextQ.classList.add('last');
    }
 
-   if (n < 1) {
-      quizIndex = quizes.length;
+   if (n !== quizes.length) {
+      quizSubmutBtn.classList.remove('active');
+      nextQ.classList.remove('last');
    }
+
+   if (n === 1) {
+      prevQ.classList.add('disabled');
+   }
+
+   if (n !== 1) {
+      prevQ.classList.remove('disabled');
+   }
+
+
 
    for (i = 0; i < quizes.length; i++) {
       quizes[i].style.visibility = "hidden";
