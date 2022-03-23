@@ -52,6 +52,9 @@ $minwidth: 320px;
 .wrapper {
    overflow: hidden;
    min-height: 100%;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   user-select: none;
 }
 
 .container {
@@ -1203,9 +1206,12 @@ $minwidth: 320px;
 }
 
 .links {
-   max-width: 370px;
    @include flexbox();
    flex-direction: column;
+   width: 370px;
+   @media (max-width: 410px) {
+      width: 300px;
+   }
    &__body {
       @include flexbox();
       align-items: center;
@@ -1457,7 +1463,3 @@ $minwidth: 320px;
 
 * .quiz-fade {
 }
-
--moz-user-select: none;
--khtml-user-select: none;
-user-select: none;

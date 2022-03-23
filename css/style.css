@@ -300,6 +300,10 @@ html {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container {
@@ -1616,7 +1620,6 @@ html {
 }
 
 .links {
-  max-width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1624,6 +1627,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 370px;
+}
+@media (max-width: 410px) {
+  .links {
+    width: 300px;
+  }
 }
 .links__body {
   display: -webkit-box;
