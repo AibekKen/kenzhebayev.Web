@@ -1087,7 +1087,7 @@ html {
       padding: 0 0 0 35px;
    }
 }
-@media (max-width: 340px) {
+@media (max-width: 369px) {
    .table__list li {
       margin: 0 0 20px 0;
       padding: 0 0 0 30px;
