@@ -125,13 +125,13 @@ $minwidth: 320px;
 @media (max-width: 460px) {
    :root {
       --fontsize1: 1.86em;
-      --fontsizeTitle: 1.7em;
       --fontsize2: 1.5em;
       --fontsize3: 1.14em;
+      --fontsizeTitle: 1.7em;
    }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
    :root {
       --fontsize1: 1.7em;
       --fontsize2: 1.4em;
