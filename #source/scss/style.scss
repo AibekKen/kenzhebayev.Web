@@ -1535,6 +1535,7 @@ $minwidth: 320px;
    -moz-transition: all 0.3s ease;
    -o-transition: all 0.3s ease;
    transition: all 0.3s ease;
+   z-index: 4;
 }
 .navigation.active {
    visibility: visible;
