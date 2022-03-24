@@ -29,6 +29,25 @@
 
    <meta name="twitter:image" content="./img/landing.png">
 
+   <!-- Meta Pixel Code -->
+   <script>
+      !function (f, b, e, v, n, t, s) {
+         if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+         };
+         if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+         n.queue = []; t = b.createElement(e); t.async = !0;
+         t.src = v; s = b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '254087776925849');
+      fbq('track', 'PageView');
+   </script>
+   <noscript><img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=254087776925849&ev=PageView&noscript=1" /></noscript>
+   <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -55,31 +74,32 @@
                </ul>
             </div>
          </div>
-<header class="header">
-   <div class="container">
-      <div class="header__row">
-         <div class="header__logo logo">
-            <div class="logo__name">Kenzhebayev.</div>
-            <div class="logo__image">
-               <img src="./img/icons/logoIcon.svg" alt="image">
-            </div>
-         </div>
-         <div class="header__menu menu">
-            <ul class="menu__list">
-               <li><a href="#1" class="menu__link link">Главная</a></li>
-               <li><a href="#3" class="menu__link link">О нас</a></li>
-               <li><a href="#4" class="menu__link link">Портфолио</a></li>
-               <li><a href="#5" class="menu__link link">Цены</a></li>
-               <li><a href="#6" class="menu__link link">Контакты</a></li>
-            </ul>
-         </div>
+         <header class="header">
+            <div class="container">
+               <div class="header__row">
+                  <div class="header__logo logo">
+                     <div class="logo__name">Kenzhebayev.</div>
+                     <div class="logo__image">
+                        <img src="./img/icons/logoIcon.svg" alt="image">
+                     </div>
+                  </div>
+                  <div class="header__menu menu">
+                     <ul class="menu__list">
+                        <li><a href="#1" class="menu__link link">Главная</a></li>
+                        <li><a href="#3" class="menu__link link">О нас</a></li>
+                        <li><a href="#4" class="menu__link link">Портфолио</a></li>
+                        <li><a href="#5" class="menu__link link">Цены</a></li>
+                        <li><a href="#6" class="menu__link link">Контакты</a></li>
+                     </ul>
+                  </div>
 
-         <div class="header__burger">
-            <span></span>
-         </div>
-      </div>
-   </div>
-</header>         <section class="main-screen" id='1'>
+                  <div class="header__burger">
+                     <span></span>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <section class="main-screen" id='1'>
             <div class="container">
                <div class="main-screen__container">
                   <h1 class="main-screen__title">Стильный, понятный и продающий</h1>
@@ -645,20 +665,20 @@
                </div>
             </div>
          </div>
-<footer class="footer">
-   <div class="container">
-      <div class="footer__row">
-         <div class="footer__column">
-            ©2022
-         </div>
-         <div class="footer__column">
-            Kenzhebayev.WEB
-         </div>
+         <footer class="footer">
+            <div class="container">
+               <div class="footer__row">
+                  <div class="footer__column">
+                     ©2022
+                  </div>
+                  <div class="footer__column">
+                     Kenzhebayev.WEB
+                  </div>
 
-      </div>
-   </div>
+               </div>
+            </div>
 
-</footer>
+         </footer>
       </main>
 
 
