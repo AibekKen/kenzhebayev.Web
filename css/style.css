@@ -1990,7 +1990,6 @@ html {
    -webkit-transition: 0.6s ease;
    transition: 0.6s ease;
    background: #47f00c;
-   z-index: 3;
 }
 
 .prev-quistion {
@@ -2086,7 +2085,6 @@ html {
    width: 35px;
    height: 41px;
    bottom: 0;
-   z-index: 4;
 }
 .navigation__list {
    position: absolute;
@@ -2115,7 +2113,6 @@ html {
    -o-transform: scale(0);
    -webkit-transition: all 0.3s ease;
    transition: all 0.3s ease;
-
 }
 
 .navigation.active {
