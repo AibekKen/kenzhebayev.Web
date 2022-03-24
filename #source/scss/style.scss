@@ -686,7 +686,7 @@ $minwidth: 320px;
    }
    &__list li {
       align-items: center;
-      height: 24px;
+      height: 30px;
       position: relative;
       margin: 0 0 25px 0;
 
@@ -696,7 +696,7 @@ $minwidth: 320px;
          margin: 0 0 25px 0;
          padding: 0 0 0 35px;
       }
-      @media (max-width: 340px) {
+      @media (max-width: 369px) {
          margin: 0 0 20px 0;
          padding: 0 0 0 30px;
       }
