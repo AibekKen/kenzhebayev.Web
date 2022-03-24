@@ -2086,6 +2086,7 @@ html {
    width: 35px;
    height: 41px;
    bottom: 0;
+   z-index: 4;
 }
 .navigation__list {
    position: absolute;
@@ -2114,6 +2115,7 @@ html {
    -o-transform: scale(0);
    -webkit-transition: all 0.3s ease;
    transition: all 0.3s ease;
+
 }
 
 .navigation.active {
